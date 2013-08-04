@@ -10,12 +10,10 @@ $links = array(array(
  ,  "link" => "music"
  ,  "description" => "Music that I have made, in a music player that I have built. Some of this is <em>really </em> old."
 
- /*
 ),array( "title" => "TUNL-MNTN-WTER"
- ,  "img" => "http://stianj.com/images/tunlmntnwter_preview@200px.png"
+ ,  "img" => "images/tunl-mntn-wter.png"
  ,  "link" => "http://stianj.com/skog/"
  ,  "description" => "A THREE.js WebGL demo made for Solskogen 2013. It ended up on 5<sup>th</sup> place in the PC demo compo. You can <a href=http://pouet.net/prod.php?which=61584>read more about it on Pouët</a>."
-  */
 
  /*
 ),array( "title" => "HONEYCOMB"
