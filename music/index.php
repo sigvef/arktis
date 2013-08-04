@@ -2,6 +2,7 @@
 <head>
 <title>Music :: Arktis by Sigve Sebastian Farstad</title>
 <link rel="stylesheet" href="/css.css">
+<script src="Player.js"></script>
 
 <style>
 
@@ -102,14 +103,20 @@ Click a track to play it.
     <span class=name>TUNL-MNTN-WTER</span>
     <span class=by>Ninjadev</span>
     <div class=description>This is the soundtrack for the Ninjadev demo called TUNL-MNTN-WTER.</div>
-    <audio src=tunl-mntn-wter.mp3>
+    <audio>
+        <source src=tunl-mntn-wter.mp3>
+        <source src=tunl-mntn-wter.ogg>
+    </audio>
     </div>
 
     <div class=song>
     <span class=name>HONEYCOMB</span>
     <span class=by>Ninjadev</span>
     <div class=description>This is the soundtrack for the Ninjadev demo called HONEYCOMB by Ninjadev.</div>
-    <audio src=honeycomb.mp3>
+    <audio>
+        <source src=honeycomb.mp3>
+        <source src=honeycomb.ogg>
+    </audio>
     </div>
 </div>
 
@@ -121,7 +128,10 @@ Click a track to play it.
     <span class=name>Unbreakable</span>
     <span class=by>sigveseb</span>
     <div class=description></div>
-    <audio src=unbreakable.mp3>
+    <audio>
+        <source src=unbreakable.mp3>
+        <source src=unbreakable.ogg>
+    </audio>
     </div>
 </div>
 
@@ -133,7 +143,10 @@ Click a track to play it.
     <span class=name>Doin' It Right feat. Giorgio Moroder</span>
     <span class=by>sigveseb</span>
     <div class=description>I've been wanting to make a remix of Daft Punk's "Doin' It Right" for a long time, and this is the result. The Giorgio quotes are taken from the REM Collaborators interview.</div>
-    <audio src=doin-it-right-feat-giorigo-moroder.mp3>
+    <audio>
+        <source src=doin-it-right-feat-giorgio-moroder.mp3>
+        <source src=doin-it-right-feat-giorgio-moroder.ogg>
+    </audio>
     </div>
 </div>
 
@@ -148,7 +161,8 @@ var $ = function(selector, element){
     return result;
 }
 
-var player = { playlist: null, song: null, audio: null };
+var player = new Player();
+
 a = player;
 
 $('.song').forEach(function(el){
@@ -159,15 +173,7 @@ $('.song').forEach(function(el){
     progressBar.classList.add('progressbar');
     el.appendChild(progressBarContainer);
     el.addEventListener('click', function(){
-        player.audio && player.audio.pause();
-        player.song && player.song.parentElement.classList.remove('playing');
-        player.song && player.song.classList.remove('playing');
-        player.song = el;
-        player.song.parentElement.classList.add('playing');
-        player.audio = $('audio', el)[0];
-        player.audio.currentTime = 0;
-        player.song.classList.add('playing');
-        player.audio && player.audio.play();
+        player.click(el);
     });
 
     setInterval(function(){
