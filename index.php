@@ -3,68 +3,68 @@
 
 /* because ghettoing your own framework is the way to go */
 
-$links = [[
+$links = array(array(
 
-],[ "title" => "Music"
+),array( "title" => "Music"
  ,  "img" => "http://placekitten.com/580/300"
  ,  "link" => "music"
  ,  "description" => "Music that I have made, in a music player that I have built. Some of this is <em>really </em> old."
 
  /*
-],[ "title" => "TUNL-MNTN-WTER"
+),array( "title" => "TUNL-MNTN-WTER"
  ,  "img" => "http://stianj.com/images/tunlmntnwter_preview@200px.png"
  ,  "link" => "http://stianj.com/skog/"
  ,  "description" => "A THREE.js WebGL demo made for Solskogen 2013. It ended up on 5<sup>th</sup> place in the PC demo compo. You can <a href=http://pouet.net/prod.php?which=61584>read more about it on Pouët</a>."
   */
 
  /*
-],[ "title" => "HONEYCOMB"
+),array( "title" => "HONEYCOMB"
  ,  "img" => "http://pouet.net/screenshots/59501.png"
  ,  "link" => "http://jord.al/honeycomb/"
  ,  "description" => "The first THREE.js WebGL I've been a part of, made for Solskogen 2012. It won 1<sup>st</sup> place in the web compo. The demo features what was probably the world's first timing-correct pure javascript midi-playing synthesizer when it was released. You can <a href=http://pouet.net/prod.php?which=59501>read more about HONEYCOMB on Pouët.</a>"
   */
 
  /*
-],[ "title" => "Ninjacon"
+),array( "title" => "Ninjacon"
  ,  "description" => "Another demo"
  ,  "img" => "ninjacon"
   */
 
  /*
-],[ "title" => "Blast"
+),array( "title" => "Blast"
  ,  "img" => "http://placekitten.com/580/301"
  ,  "link" => "http://demo.tidla.us/Blast.apk"
  ,  "description" => "Blast is an experimental mobile-first social network touted as \"the opposite of Snapchat\", whatever that means. Currently, this link links directly to the Android app."
   */
 
  /*
-],[ "title" => "Firefly"
+),array( "title" => "Firefly"
  ,  "img" => "firefly"
  ,  "link" => "firefly"
  ,  "description" => "Firefly is a game written during a 48-hour long game jam called Bacon Game Jam 05. The aim was to make a game from scratch built around the theme of the jam: \"Lights Out\"."
   */
 
  /*
-],[ "title" => "Eventhandler"
+),array( "title" => "Eventhandler"
  ,  "img" => "http://placekitten.com/581/301"
  ,  "link" => "eventhandler"
  ,  "description" => "Eventhandler is a game written during a 48-hour long game jam called Bacon Game Jam 03. The ain was to make a game from scratch built around the theme of the jam: (insert theme here). Eventhandler was written in about 24 hours."
   */
 
  /*
-],[ "title" => "Windwill"
+),array( "title" => "Windwill"
  ,  "description" => "Windwill is a game written during a 48-hour long game jam called Bacon Game Jam 04. The theme of the jam was: \"Wind-powered\". The game jam took place in the same weekend as the yearly inauguration ball at my university, so most of the coding was done in a hungover state on Sunday morning, still in gala clothing."
  ,  "img" => "http://placekitten.com/580/299"
   */
 
  /*
-],[ "title" => "Various experiments"
+),array( "title" => "Various experiments"
  ,  "img" => "http://placekitten.com/579/300"
  ,  "link" => "hacks"
  ,  "description" => "This is where I aggregate a bunch of small random hacks."
   */
 
-]];
+));
 
 ?>
 
