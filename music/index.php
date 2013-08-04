@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Music :: Arktis by Sigve Sebastian Farstad</title>
-<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="/css.css">
 
 <style>
 
@@ -16,6 +16,27 @@
     padding: 0;
     font-size: 0.8em;
     line-height: 1.2em;
+}
+
+.progressbar{
+    height: 5px;
+    width: 0;
+    background: #222;
+    -webkit-transition: width 1s linear;
+    -moz-transition: width 1s linear;
+    transition: width 1s linear;
+}
+
+.progressbar-container{
+    display:none;
+    width: 580px;
+    margin-bottom: -10px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.song.playing .progressbar-container{
+    display: block;
 }
 
 .song{
@@ -128,8 +149,15 @@ var $ = function(selector, element){
 }
 
 var player = { playlist: null, song: null, audio: null };
+a = player;
 
 $('.song').forEach(function(el){
+    var progressBarContainer = document.createElement('div');
+    progressBarContainer.classList.add('progressbar-container');
+    var progressBar = document.createElement('div');
+    progressBarContainer.appendChild(progressBar);
+    progressBar.classList.add('progressbar');
+    el.appendChild(progressBarContainer);
     el.addEventListener('click', function(){
         player.audio && player.audio.pause();
         player.song && player.song.parentElement.classList.remove('playing');
@@ -141,6 +169,10 @@ $('.song').forEach(function(el){
         player.song.classList.add('playing');
         player.audio && player.audio.play();
     });
+
+    setInterval(function(){
+        $('.progressbar', player.song)[0].style.width = player.audio.currentTime/player.audio.duration * 100 + "%";
+    },900);
 });
 
 })();
