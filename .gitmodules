@@ -1,0 +1,3 @@
+[submodule "eventhandler"]
+	path = eventhandler
+	url = git@github.com:sigvef/eventhandler.git
