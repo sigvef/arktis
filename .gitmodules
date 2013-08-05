@@ -4,3 +4,6 @@
 [submodule "honeycomb"]
 	path = honeycomb
 	url = git@github.com:sigvef/sol.git
+[submodule "firefly"]
+	path = firefly
+	url = git@github.com:sigvef/BGJ05.git

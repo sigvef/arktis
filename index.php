@@ -33,12 +33,10 @@ $links = array(array(
  ,  "description" => "Blast is an experimental mobile-first social network touted as \"the opposite of Snapchat\", whatever that means. Currently, this link links directly to the Android app."
   */
 
- /*
 ),array( "title" => "Firefly"
- ,  "img" => "firefly"
+ ,  "img" => "images/firefly.png"
  ,  "link" => "firefly"
  ,  "description" => "Firefly is a game written during a 48-hour long game jam called Bacon Game Jam 05. The aim was to make a game from scratch built around the theme of the jam: \"Lights Out\"."
-  */
 
 ),array( "title" => "Event Handler"
  ,  "img" => "images/eventhandler.png"
