@@ -13,12 +13,12 @@ $links = array(array(
 ),array( "title" => "TUNL-MNTN-WTER"
  ,  "img" => "images/tunl-mntn-wter.png"
  ,  "link" => "http://stianj.com/skog/"
- ,  "description" => "A THREE.js WebGL demo made for Solskogen 2013. It ended up on 5<sup>th</sup> place in the PC demo compo. You can <a href=http://pouet.net/prod.php?which=61584>read more about it on Pouët</a>."
+ ,  "description" => "A THREE.js WebGL demo made for Solskogen 2013. It ended up on 5. place in the PC demo compo. You can <a href=http://pouet.net/prod.php?which=61584>read more about it on Pouët</a>."
 
 ),array( "title" => "HONEYCOMB"
  ,  "img" => "images/honeycomb.png"
  ,  "link" => "http://jord.al/honeycomb/"
- ,  "description" => "The first THREE.js WebGL I've been a part of, made for Solskogen 2012. It won 1<sup>st</sup> place in the web compo. The demo features what was probably the world's first timing-correct pure javascript midi-playing synthesizer when it was released. You can <a href=http://pouet.net/prod.php?which=59501>read more about HONEYCOMB on Pouët.</a>"
+ ,  "description" => "The first THREE.js WebGL I've been a part of, made for Solskogen 2012. It won 1. place in the web compo. The demo features what was probably the world's first timing-correct pure javascript midi-playing synthesizer when it was released. You can <a href=http://pouet.net/prod.php?which=59501>read more about HONEYCOMB on Pouët.</a>"
 
  /*
 ),array( "title" => "Ninjacon"
