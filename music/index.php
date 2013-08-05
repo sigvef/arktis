@@ -69,6 +69,52 @@ Click a track to play it.
     </div>
 </div>
 
+<h3>Trondheim Guitar Sextet</h3>
+<div class=description>
+A couple of years ago, I played in a guitar sextet called Trondheim Guitar Sextet. The sextet recorded only one EP titled "Trondheim Gitar Sekstett: Scandinavian Masters", which is reproduced here for your enjoyment.
+</div>
+<div id=trondheim-guitar-sextet class=playlist>
+    <div class=song>
+    <span class=name>Eleanor Rigby</span>
+    <span class=by>TGS/Lennon/Mc Cartney</span>
+    <div class=description>Jan-Olof Eriksson's novel guitar ensemble arrangement of The Beatles' classic Eleanor Rigby.</div>
+    <audio>
+        <source src=tgs1.mp3>
+        <source src=tgs1.ogg>
+    </audio>
+    </div>
+
+    <div class=song>
+    <span class=name>Vals Ecuatorial</span>
+    <span class=by>TGS/Pieter van der Staak</span>
+    <div class=description>A sleepy summer waltz by Dutch classical guitarist and composer Pieter van der Staak, arranged by Jan-Olof Eriksson.</div>
+    <audio>
+        <source src=tgs2.mp3>
+        <source src=tgs2.ogg>
+    </audio>
+    </div>
+
+    <div class=song>
+    <span class=name>Cantico</span>
+    <span class=by>TGS/Trad. Venezuela</span>
+    <div class=description>Collected by V. E. Sojo and arranged for guitar ensemble by J. Strømdal.</div>
+    <audio>
+        <source src=tgs3.mp3>
+        <source src=tgs3.ogg>
+    </audio>
+    </div>
+
+    <div class=song>
+    <span class=name>Galeron</span>
+    <span class=by>TGS/Trad. Venezuela</span>
+    <div class=description>Collected by V. E. Sojo and arranged for guitar ensemble by J. Strømdal.</div>
+    <audio>
+        <source src=tgs4.mp3>
+        <source src=tgs4.ogg>
+    </audio>
+    </div>
+</div>
+
 <script>
 
 (function(){
