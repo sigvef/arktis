@@ -23,7 +23,7 @@ Click a track to play it.
     <div class=song>
     <span class=name>TUNL-MNTN-WTER</span>
     <span class=by>Ninjadev</span>
-    <div class=description>This is the soundtrack for the Ninjadev demo called TUNL-MNTN-WTER.</div>
+    <div class=description>This is the soundtrack for the Ninjadev demo called TUNL-MNTN-WTER. Fun fact: the "chugga chugga" rhythm that accompanies the choo-choo sounds are human beat-boxed.</div>
     <audio>
         <source src=tunl-mntn-wter.mp3>
         <source src=tunl-mntn-wter.ogg>
@@ -47,7 +47,7 @@ Click a track to play it.
     <div class=song>
     <span class=name>Unbreakable</span>
     <span class=by>sigveseb</span>
-    <div class=description></div>
+    <div class=description>A dirty electronica song inspired by Caravan Palace.</div>
     <audio>
         <source src=unbreakable.mp3>
         <source src=unbreakable.ogg>
