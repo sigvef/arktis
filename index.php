@@ -38,16 +38,16 @@ $links = array(array(
  ,  "link" => "firefly"
  ,  "description" => "Firefly is a game written during a 48-hour long game jam called Bacon Game Jam 05. The aim was to make a game from scratch built around the theme of the jam: \"Lights Out\"."
 
+
+),array( "title" => "Windwill"
+ ,  "img" => "images/windwill.png"
+ ,  "link" => "windwill"
+ ,  "description" => "Windwill is a game written during a 48-hour long game jam called Bacon Game Jam 03. The theme of the jam was: \"Wind-powered\". The game jam took place in the same weekend as the yearly inauguration ball at my university, so most of the coding was done in a hungover state on Sunday morning, still in gala clothing. Windwill is quite playable on the iPad, so you should try that if you have one."
+
 ),array( "title" => "Event Handler"
  ,  "img" => "images/eventhandler.png"
  ,  "link" => "eventhandler"
  ,  "description" => "Event Handler is a game written during a 48-hour long game jam called Bacon Game Jam 02. The aim was to make a game from scratch built around the theme of the jam: \"Reverse Perspective\". Event Handler was written in about 24 hours. There is a <a href=http://github.com/sigveseb/eventhandler>GitHub repo</a>, but the code quality isn't higher than you might expect from a game jam game."
-
- /*
-),array( "title" => "Windwill"
- ,  "description" => "Windwill is a game written during a 48-hour long game jam called Bacon Game Jam 04. The theme of the jam was: \"Wind-powered\". The game jam took place in the same weekend as the yearly inauguration ball at my university, so most of the coding was done in a hungover state on Sunday morning, still in gala clothing."
- ,  "img" => "http://placekitten.com/580/299"
-  */
 
  /*
 ),array( "title" => "Various experiments"

@@ -7,3 +7,6 @@
 [submodule "firefly"]
 	path = firefly
 	url = git@github.com:sigvef/BGJ05.git
+[submodule "windwill"]
+	path = windwill
+	url = git@github.com:calibwam/bgj-2012.git
