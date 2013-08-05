@@ -17,7 +17,7 @@ $links = array(array(
 
 ),array( "title" => "HONEYCOMB"
  ,  "img" => "images/honeycomb.png"
- ,  "link" => "http://jord.al/honeycomb/"
+ ,  "link" => "honeycomb"
  ,  "description" => "The first THREE.js WebGL I've been a part of, made for Solskogen 2012. It won 1. place in the web compo. The demo features what was probably the world's first timing-correct pure javascript midi-playing synthesizer when it was released. You can <a href=http://pouet.net/prod.php?which=59501>read more about HONEYCOMB on Pouët.</a>"
 
  /*
@@ -40,7 +40,7 @@ $links = array(array(
  ,  "description" => "Firefly is a game written during a 48-hour long game jam called Bacon Game Jam 05. The aim was to make a game from scratch built around the theme of the jam: \"Lights Out\"."
   */
 
-),array( "title" => "Event Jandler"
+),array( "title" => "Event Handler"
  ,  "img" => "images/eventhandler.png"
  ,  "link" => "eventhandler"
  ,  "description" => "Event Handler is a game written during a 48-hour long game jam called Bacon Game Jam 02. The aim was to make a game from scratch built around the theme of the jam: \"Reverse Perspective\". Event Handler was written in about 24 hours. There is a <a href=http://github.com/sigveseb/eventhandler>GitHub repo</a>, but the code quality isn't higher than you might expect from a game jam game."

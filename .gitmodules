@@ -1,3 +1,6 @@
 [submodule "eventhandler"]
 	path = eventhandler
 	url = git@github.com:sigvef/eventhandler.git
+[submodule "honeycomb"]
+	path = honeycomb
+	url = git@github.com:sigvef/sol.git
