@@ -77,7 +77,7 @@ A couple of years ago, I played in a guitar sextet called Trondheim Guitar Sexte
     <div class=song>
     <span class=name>Eleanor Rigby</span>
     <span class=by>TGS/Lennon/Mc Cartney</span>
-    <div class=description>Jan-Olof Eriksson's novel guitar ensemble arrangement of The Beatles'' classic Eleanor Rigby.</div>
+    <div class=description>Jan-Olof Eriksson's novel guitar ensemble arrangement of The Beatles' classic Eleanor Rigby.</div>
     <audio>
         <source src=tgs1.mp3>
         <source src=tgs1.ogg>
