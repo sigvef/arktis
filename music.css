@@ -1,0 +1,80 @@
+* {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.description{
+    padding: 0;
+    font-size: 0.8em;
+    line-height: 1.4em;
+}
+
+.progressbar{
+    height: 5px;
+    width: 0;
+    background: #222;
+    -webkit-transition: width 1s linear;
+    -moz-transition: width 1s linear;
+    transition: width 1s linear;
+}
+
+.progressbar-container{
+    display:none;
+    width: 580px;
+    margin-bottom: -10px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.song.playing .progressbar-container{
+    display: block;
+}
+
+.song{
+    cursor: pointer;
+    padding: 0;
+}
+
+.song .by{
+    color: #aaa;
+}
+
+.song.playing .by{
+    color: #eee;
+}
+
+.song .by::before{
+    content: "by ";
+}
+
+.song .description{
+    display: none;
+    padding: 20px 90px 20px 90px;
+}
+
+.song .name{
+    padding-left: 10px;
+}
+
+.song.playing{
+    background: #ccc;
+}
+
+.playlist {
+    border: 1px solid #ccc;
+    background: #eee;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.playlist > * {
+    padding: 10px 20px; 
+}
+
+.playlist.playing{
+}
+
+.song.playing .description{
+    display: block;
+}
