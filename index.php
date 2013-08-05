@@ -72,6 +72,7 @@ $links = array(array(
 <head>
 <title>Arktis by Sigve Sebastian Farstad</title>
 <link rel="stylesheet" href="css.css">
+<meta charset=utf-8>
 </head>
 <body>
 
