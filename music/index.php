@@ -97,7 +97,7 @@ A couple of years ago, I played in a guitar sextet called Trondheim Guitar Sexte
     <div class=song>
     <span class=name>Cantico</span>
     <span class=by>TGS/Trad. Venezuela</span>
-    <div class=description>Collected by V. E. Sojo and arranged for guitar ensemble by J. Strømdal.</div>
+    <div class=description>Pensive traditional Venezuelan melody, harmonized for solo guitar by by Vicente Emilio Sojo and arranged for guitar ensemble by J. Strømdal.</div>
     <audio>
         <source src=tgs3.mp3>
         <source src=tgs3.ogg>
@@ -107,7 +107,7 @@ A couple of years ago, I played in a guitar sextet called Trondheim Guitar Sexte
     <div class=song>
     <span class=name>Galeron</span>
     <span class=by>TGS/Trad. Venezuela</span>
-    <div class=description>Collected by V. E. Sojo and arranged for guitar ensemble by J. Strømdal.</div>
+    <div class=description>Lively traditional Venezuelan melody, harmonized for solo guitar by by Vicente Emilio Sojo and arranged for guitar ensemble by J. Strømdal.</div>
     <audio>
         <source src=tgs4.mp3>
         <source src=tgs4.ogg>
