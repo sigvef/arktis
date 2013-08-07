@@ -34,7 +34,7 @@ Click a track to play it.
     <div class=song>
     <span class=name>HONEYCOMB</span>
     <span class=by>Ninjadev</span>
-    <div class=description>This is the soundtrack for the Ninjadev demo called HONEYCOMB by Ninjadev.</div>
+    <div class=description>This is the soundtrack for the Ninjadev demo called HONEYCOMB.</div>
     <audio>
         <source src=honeycomb.mp3>
         <source src=honeycomb.ogg>
