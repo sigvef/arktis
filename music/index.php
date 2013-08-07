@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="music.css">
 <script src="Player.js"></script>
 <meta charset=utf-8>
-
+<? include('../stats.inc');?>
 </head>
 <body>
 
