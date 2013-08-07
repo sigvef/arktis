@@ -5,6 +5,11 @@
 
 $links = array(array(
 
+),array( "title" => "Wikipendium"
+ ,  "img" => "images/wikipendium.png"
+ ,  "link" => "http://wikipendium.no"
+ ,  "description" => "Wikipendium is the compendium that anyone can edit. Wikipendium's goal is to provide freely available compendiums for every course. At the moment, most of the compendiums in Wikipendium are for courses offered at NTNU."
+
 ),array( "title" => "TUNL-MNTN-WTER"
  ,  "img" => "images/tunl-mntn-wter.png"
  ,  "link" => "http://stianj.com/skog/"
