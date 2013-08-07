@@ -5,11 +5,6 @@
 
 $links = array(array(
 
-),array( "title" => "Music"
- ,  "img" => "http://placekitten.com/580/300"
- ,  "link" => "music"
- ,  "description" => "Music that I have made, in a music player that I have built. Some of this is <em>really </em> old."
-
 ),array( "title" => "TUNL-MNTN-WTER"
  ,  "img" => "images/tunl-mntn-wter.png"
  ,  "link" => "http://stianj.com/skog/"
@@ -48,6 +43,11 @@ $links = array(array(
  ,  "img" => "images/eventhandler.png"
  ,  "link" => "eventhandler"
  ,  "description" => "Event Handler is a game written during a 48-hour long game jam called Bacon Game Jam 02. The aim was to make a game from scratch built around the theme of the jam: \"Reverse Perspective\". Event Handler was written in about 24 hours. There is a <a href=http://github.com/sigveseb/eventhandler>GitHub repo</a>, but the code quality isn't higher than you might expect from a game jam game."
+
+),array( "title" => "Music"
+ ,  "img" => "http://placekitten.com/580/300"
+ ,  "link" => "music"
+ ,  "description" => "Music that I have made, in a music player that I have built. Some of this is <em>really </em> old."
 
  /*
 ),array( "title" => "Various experiments"
