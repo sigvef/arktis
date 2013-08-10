@@ -9,7 +9,14 @@
 </head>
 <body>
 
+<header>
+<nav>
+<a href="/" rel="index">Arktis</a>
+»
+<a href="/music">Music</a>
+</nav>
 <h1>Music</h1>
+</header>
 
 <p>
 This is a collection of music I have made.
@@ -151,5 +158,6 @@ $('.song').forEach(function(el){
 
 </script>
 
+<? require('../footer.inc');?>
 </body>
 </html>

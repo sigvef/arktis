@@ -102,6 +102,7 @@ Here is a list of things I've been working on recently.
 </div>
 
 
+<? require('footer.inc');?>
 </body>
 
 <!-- We're hiring! Send your resume and cover
