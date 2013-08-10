@@ -52,6 +52,15 @@ footer{
     text-align:right;
 }
 
+footer img.github{
+    height: 18px;
+    opacity: 0.5;
+}
+
+footer a:hover img{
+    opacity: 1 !important;
+}
+
 canvas{
     border-top:1px solid #999;margin:20px auto 0;display:block;
 }
