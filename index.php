@@ -54,12 +54,10 @@ $links = array(array(
  ,  "link" => "music"
  ,  "description" => "Music that I have made, in a music player that I have built. Some of this is <em>really </em> old."
 
- /*
-),array( "title" => "Various experiments"
+),array( "title" => "Hacks"
  ,  "img" => "http://placekitten.com/579/300"
  ,  "link" => "hacks"
- ,  "description" => "This is where I aggregate a bunch of small random hacks."
-  */
+ ,  "description" => "This is where I agrragate som of my random hacks. Some are interesting, some are not. "
 
 ));
 
