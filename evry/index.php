@@ -5,6 +5,9 @@
 <link rel="stylesheet" href="/css.css">
 <meta charset=utf-8>
 <? require('../stats.inc');?>
+<style>
+em{float:right;}
+</style>
 </head>
 <body>
 
