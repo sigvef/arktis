@@ -10,3 +10,6 @@
 [submodule "windwill"]
 	path = windwill
 	url = git@github.com:calibwam/bgj-2012.git
+[submodule "gabong"]
+	path = gabong
+	url = git@github.com:sigvef/gipt.git
