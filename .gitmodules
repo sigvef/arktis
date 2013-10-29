@@ -13,3 +13,6 @@
 [submodule "gabong"]
 	path = gabong
 	url = git@github.com:sigvef/gipt.git
+[submodule "cute-animals-inc"]
+	path = cute-animals-inc
+	url = git@github.com:ninjadev/bgj-06.git
