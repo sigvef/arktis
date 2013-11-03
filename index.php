@@ -62,7 +62,7 @@ $links = array(array(
 ),array( "title" => "Hacks"
  ,  "img" => "http://placekitten.com/579/300"
  ,  "link" => "hacks"
- ,  "description" => "This is where I agrragate som of my random hacks. Some are interesting, some are not. "
+ ,  "description" => "This is where I aggregate som of my random hacks. Some are interesting, some are not. "
 
 ));
 
