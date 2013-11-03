@@ -10,8 +10,6 @@ $links = array(array(
  ,  "link" => "cute-animals-inc"
  ,  "description" => "Cute Animals Inc. is an addictive incremental game written during a 48-hour long game jam called Bacon Game Jam 06. The theme of the jam was \"Rainbow\". The aim of the game is to protect a pot of gold from evil monsters using rainbow-powered lasers. The game won 3rd place in the jam."
 
- ,  "description" => "Firefly is a game written during a 48-hour long game jam called Bacon Game Jam 05. The aim was to make a game from scratch built around the theme of the jam: \"Lights Out\"."
-
 ),array( "title" => "Wikipendium"
  ,  "img" => "images/wikipendium.png"
  ,  "link" => "http://wikipendium.no"
