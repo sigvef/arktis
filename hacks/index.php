@@ -25,6 +25,9 @@ This is a list of old and new hacks I've been fiddling with.
 
 <dl>
 
+<dt><a href="fukt">Fukt</a></dt>
+<dd>A particle-based water simulation.</dd>
+
 <dt><a href="circle">Circle</a></dt>
 <dd>An intertwining circle animation.</dd>
 
