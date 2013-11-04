@@ -47,7 +47,7 @@ This is a list of old and new hacks I've been fiddling with.
 <dd>Classic plasma effect from the old demoscene, implemented in javascript.</dd>
 
 <dt><a href="sierpinskistar">Sierpinski star</a></dt>
-<dd>Et quick canvas-experiment that iteratively draws larger and larger Sierpinski stars using Lindenmayer systems.</dd>
+<dd>A quick canvas-experiment that iteratively draws larger and larger Sierpinski stars using Lindenmayer systems.</dd>
 
 <dt><a href="imgrender">Imgrender.pl</a></dt>
 <dd>irssi-script for rendering ASCII versions of images in a separate window in Irssi.</dd>
