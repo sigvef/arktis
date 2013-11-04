@@ -25,6 +25,9 @@ This is a list of old and new hacks I've been fiddling with.
 
 <dl>
 
+<dt><a href="ifs">IFS</a></dt>
+<dd>A quick-and-dirty iterated function system-based fractal zoomer.</dd>
+
 <dt><a href="fukt">Fukt</a></dt>
 <dd>A particle-based water simulation.</dd>
 
