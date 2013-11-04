@@ -25,6 +25,9 @@ This is a list of old and new hacks I've been fiddling with.
 
 <dl>
 
+<dt><a href="spin">Spin</a></dt>
+<dd>A twister effect.</dd>
+
 <dt><a href="scratch">Scratch</a></dt>
 <dd>A short 1-hour speed-demo. The music is by trash80.</dd>
 
