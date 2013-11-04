@@ -25,6 +25,9 @@ This is a list of old and new hacks I've been fiddling with.
 
 <dl>
 
+<dt><a href="circle">Circle</a></dt>
+<dd>An intertwining circle animation.</dd>
+
 <dt><a href="qrclock">QR clock</a></dt>
 <dd>A digital clock which displays time in a convenient-to-read QR code.</dd>
 
