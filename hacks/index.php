@@ -25,6 +25,9 @@ This is a list of old and new hacks I've been fiddling with.
 
 <dl>
 
+<dt><a href="scratch">Scratch</a></dt>
+<dd>A short 1-hour speed-demo. The music is by trash80.</dd>
+
 <dt><a href="scorched">Action Scorched</a></dt>
 <dd>A fun and action-packed version of the old-school arcade game Scorched.</dd>
 

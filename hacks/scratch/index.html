@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Grill from Ipanema</title>
+        <style> html,body,canvas{background:black;color:white;}
+
+<? require("../../stats.inc");?>
+        </style>
+
+    </head>
+    <body>
+        <audio id="audio" src="audio.mp3"></audio>
+        <canvas width=560 height=560 id=sigveseb></canvas>
+        <button style="background:white;" onclick="start=true;audio.play()">play</button>
+        <script>
+            canvas = document.getElementById("sigveseb");
+            ctx = canvas.getContext("2d");
+            audio = document.getElementById("audio");
+
+            d = new Date();
+            old_d = d;
+            dt = 0;
+            start = false;
+
+            lsys = "FX";
+
+
+            function build_lsys(){
+                new_lsys = "";
+                for(var i=0;i<lsys.length;i++){
+                    if(lsys[i] == "X"){
+                        new_lsys += "X+YF";
+                    }
+                    else if(lsys[i] == "Y"){
+                        new_lsys += "FX-Y";
+                    }
+                    else{
+                        new_lsys += lsys[i];
+                    }
+                }
+                lsys = new_lsys;
+
+            }
+
+            lsys_pointer = 0;
+            dx = 0;
+            x = 200;
+            y = 200;
+            dy = -1;
+            SIZE = 4;
+
+            function rotateLeft(){
+                if(dx == -1){ dx=0;dy=1;}
+                else if(dx == 1){ dx=0;dy=-1;}
+                else if(dy == -1){ dx=-1;dy=0;}
+                else if(dy == 1){ dx=1;dy=0;}
+            }
+
+            function update(){
+                ctx.strokeStyle = "rgb(255,255,255)";
+                if(lsys[lsys_pointer] == "F"){
+                    ctx.beginPath();
+                    ctx.moveTo(x,y);
+                    x+=dx*SIZE;
+                    y+=dy*SIZE;
+                    ctx.lineTo(x,y);
+                    ctx.stroke();
+
+                }
+                else if(lsys[lsys_pointer] == "-"){
+                    rotateLeft();
+                }
+                else if(lsys[lsys_pointer] == "+"){
+                    rotateLeft();
+                    rotateLeft();
+                    rotateLeft();
+                }
+                lsys_pointer++;
+            }
+
+            function loop(){
+                d= new Date();
+                dt += d-old_d;
+                old_d = d;
+                act = audio.currentTime;
+                if(act>90)act=90;
+                while(dt>100-act){
+                    if(start)update();
+                    dt-= 100-act;
+                act = audio.currentTime;
+                if(act>90)act=90;
+                }
+                setTimeout(loop,0);
+            }
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            build_lsys();
+            console.log(lsys);
+            loop();
+        </script>
+    </script>
+</body>
+</html>
