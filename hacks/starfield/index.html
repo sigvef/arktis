@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Starfield</title>
+        <script src="Three.js"></script>
+        <style>
+            html,body{overflow:hidden;padding:0;margin:0;background:black;}
+            canvas{width:100%;}
+        </style>
+    </head>
+    <body>
+        <audio src="yoyo.mp3" loop autoplay></audio>
+        <marquee id="sex" style="position:fixed;font:80px sans-serif;color:white;"behavior="slide" direction="left">1 hour speed demo by ninjadev. Y'all be haters. Shout out to #gabong. by cakes-s</marquee>
+        <div id="starfield"></div>
+        <script>
+            //magic happens here
+
+            var W =1280;
+            var H =720;
+
+            var VIEW_ANGLE = 45, ASPECT = W/H, NEAR = 0.1, FAR = 10000;
+
+            var container = document.getElementById("starfield");
+            var renderer = new THREE.WebGLRenderer();
+            var camera = new THREE.PerspectiveCamera(
+                VIEW_ANGLE,
+                ASPECT,
+                NEAR,
+                FAR);
+
+            var scene = new THREE.Scene();
+
+            scene.add(camera);
+
+            var cameraDelta = {x :1,y:2,z:3};
+
+            camera.position.z = 300;
+
+            var t=0;
+            var camdist = 100;
+            var ddd = document.getElementById("sex");
+            setInterval(function(){
+
+                t++;
+                camdist = 200+Math.sin(t/10)*30;
+                camera.position.x =camdist*Math.sin(t/100);
+                camera.position.z =camdist*Math.cos(t/100);
+                camera.rotation.y = (t/100 )%(Math.PI*2);
+                camera.rotation.z = Math.cos(t/100);
+                sphereMaterial.color.setRGB(0.5*(Math.sin(t/13.0)+1),0.5*(Math.sin(t/47.0)+1),0.5*(Math.sin(t/89.0)+1));
+            renderer.render(scene,camera);
+            },10);
+
+            renderer.setSize(W,H);
+
+            container.appendChild(renderer.domElement);
+
+
+            var sphereMaterial = new THREE.MeshLambertMaterial({color:0xCC0000});
+            var meshes = [];
+
+            for(var i=0;i<500;i++){
+                var sphere = new THREE.Mesh(new THREE.SphereGeometry(5, 16, 16), sphereMaterial);
+                sphere.position = new THREE.Vector3((Math.random()-0.5)*1000,(Math.random()-0.5)*1000,(Math.random()-0.5)*1000);
+                meshes[i] = sphere;
+            }
+
+
+            for(var i=0;i<meshes.length;i++){
+                scene.add(meshes[i]);
+            }
+
+            var pointLight = new THREE.PointLight(0xFFFFFF);
+            pointLight.position.x = 10;
+            pointLight.position.y = 50;
+            pointLight.position.z = 130;
+
+            scene.add(pointLight);
+
+        </script>
+    </body>
+</html>

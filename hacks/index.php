@@ -25,6 +25,9 @@ This is a list of old and new hacks I've been fiddling with.
 
 <dl>
 
+<dt><a href="starfield">Starfield</a></dt>
+<dd>A 1-hour speed-demo by Ninjadev. Incidentally my first experience with THREE.js.</dd>
+
 <dt><a href="spin">Spin</a></dt>
 <dd>A twister effect.</dd>
 
