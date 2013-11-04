@@ -25,6 +25,9 @@ This is a list of old and new hacks I've been fiddling with.
 
 <dl>
 
+<dt><a href="scorched">Action Scorched</a></dt>
+<dd>A fun and action-packed version of the old-school arcade game Scorched.</dd>
+
 <dt><a href="ifs">IFS</a></dt>
 <dd>A quick-and-dirty iterated function system-based fractal zoomer.</dd>
 
