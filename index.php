@@ -5,6 +5,11 @@
 
 $links = array(array(
 
+),array( "title" => "Barricelli"
+ ,  "img" => "images/barricelli.jpg"
+ ,  "link" => "http://barricel.li"
+ ,  "description" => "Barricelli is the name of a specialized genetic algorithms computer designed and built by 9 other students and myself at the Norwegian University of Science and Technology. It is a computer designed to quickly find good approximations to hard problems using a custom-made hardware-accelerated generic genetic algorithm solver."
+
 ),array( "title" => "Cute Animals Inc."
  ,  "img" => "images/cute-animals-inc.png"
  ,  "link" => "cute-animals-inc"
