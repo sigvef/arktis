@@ -22,7 +22,7 @@ $links = array(array(
 
 ),array( "title" => "TUNL-MNTN-WTER"
  ,  "img" => "images/tunl-mntn-wter.png"
- ,  "link" => "http://stianj.com/skog/"
+ ,  "link" => "tunl-mntn-wter"
  ,  "description" => "A THREE.js WebGL demo made for Solskogen 2013. It ended up on 5. place in the PC demo compo. You can <a href=http://pouet.net/prod.php?which=61584>read more about it on Pouët</a>."
 
 ),array( "title" => "HONEYCOMB"

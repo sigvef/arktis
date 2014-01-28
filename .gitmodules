@@ -16,3 +16,6 @@
 [submodule "cute-animals-inc"]
 	path = cute-animals-inc
 	url = git@github.com:ninjadev/bgj-06.git
+[submodule "tunl-mntn-wter"]
+	path = tunl-mntn-wter
+	url = git@github.com:sigvef/skog.git
