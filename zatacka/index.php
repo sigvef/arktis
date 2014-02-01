@@ -2,7 +2,6 @@
 <html>
 <head>
 <title>Zatacka :: Arktis by Sigve Sebastian Farstad</title>
-<link rel="stylesheet" href="css.css">
 <meta charset=utf-8>
 <? include('../stats.inc');?>
 </head>
