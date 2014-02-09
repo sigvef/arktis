@@ -5,6 +5,11 @@
 
 $links = array(array(
 
+),array( "title" => "\"Old Computers Never Die!\""
+ ,  "img" => "images/old-computers-never-die.jpg"
+ ,  "link" => "old-computers-never-die"
+ ,  "description" => "\"Old Computers Never Die!\" is a 3D web-demo written for the first demo competition of AbelLan in Trondheim. The theme of the competition was <em>old school</em>. The demo won 1<sup>st</sup> place in the competition."
+
 ),array( "title" => "Barricelli"
  ,  "img" => "images/barricelli.jpg"
  ,  "link" => "http://barricel.li"
