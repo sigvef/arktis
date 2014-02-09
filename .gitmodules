@@ -19,3 +19,6 @@
 [submodule "tunl-mntn-wter"]
 	path = tunl-mntn-wter
 	url = git@github.com:sigvef/skog.git
+[submodule "old-computers-never-die"]
+	path = old-computers-never-die
+	url = git://github.com/sigvef/old-school-demo
