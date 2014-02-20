@@ -29,6 +29,16 @@ Click a track to play it.
 
 <div id=demoscene class=playlist>
     <div class=song>
+    <span class=name>"Old Computers Never Die!"</span>
+    <span class=by>sigveseb</span>
+    <div class=description>This is the soundtrack for my first solo demo called "Old Computers Never Die!"</div>
+    <audio>
+        <source src=old-computers-never-die.mp3>
+        <source src=old-computers-never-die.ogg>
+    </audio>
+    </div>
+
+    <div class=song>
     <span class=name>TUNL-MNTN-WTER</span>
     <span class=by>Ninjadev</span>
     <div class=description>This is the soundtrack for the Ninjadev demo called TUNL-MNTN-WTER. Fun fact: the "chugga chugga" rhythm that accompanies the choo-choo sounds are human beat-boxed.</div>
