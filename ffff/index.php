@@ -51,6 +51,8 @@ Følgende forkortelsesliste foreligger for foreningens fagmedlemmer:
 <dd>/ˈskwēl/</dd>
 <dt>.SVG<br />(Scalable Vector Graphics)</dt>
 <dd>/ˈswag/</dd>
+<dt>.DMG<br />(Apple Disk Image File)</dt>
+<dd>/ˈdæmɪdʒ/</dd>
 </dl>
 
 </div>
