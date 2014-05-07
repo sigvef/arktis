@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ninjacon 2014</title>
+        <meta charset=utf8 />
+        <script src=Terminal.js></script>
+        <script src=Mesh.js></script>
+        <script src=ConsoleDemo.js></script>
+        <script src=snaretimes.js></script>
+        <script src=bootstrap.js></script>
+        <style>
+            * { padding: 0; margin: 0; border: 0; background: black; }
+            canvas { background: black; }
+            button { position: fixed; top: 50%; left: 50%; color: #fd0;
+                     z-index: 999; width: 50px; height: 50px;
+                     margin-top: -25px; margin-left: -25px; cursor: pointer;
+                     background: rgba(255, 255, 255, 0.1); outline: 0; }
+        </style>
+    </head>
+    <body onload=bootstrap()>
+        <button id=playbutton>Play</button>
+        <canvas id=c></canvas>
+        <audio id=music>
+        <source src=ninjacon2014.mp3>
+        <source src=ninjacon2014.ogg>
+        </audio>
+        <script>
+            var totalSnares = 67;
+            var whiteScreen = 0;
+
+            var terminal = null;
+            var consoleDemo = null;
+            var fullScreenFlash = 0;
+            var mesh = new Mesh();
+
+            var beatThreshold = 6.3046875 * 4;
+            var beatCounter = 3 * beatThreshold / 2 / 6;
+            var beat = 0;
+
+            function reset(){
+                consoleDemo = new ConsoleDemo();
+                terminal = new Terminal();
+                terminal.print('Ninjadev® Workstation 3000™ Professional Edition');
+                terminal.print('Last login: Sun Apr 28 2013 13:37 GMT+1');
+                terminal.print(' ');
+                terminal.print('conmaster@flex ~ $');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+                terminal.print(' ');
+            }
+            reset();
+
+
+            function render(){
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                mesh.render(ctx);
+                if(t >= 496){
+                    terminal.render(ctx);
+                }
+
+                if(fullScreenFlash > 0){
+                    ctx.save();
+                    ctx.fillStyle = color(255, 255, 255, fullScreenFlash / 100);
+                    ctx.globalCompositeOperation = 'lighter';
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+                    ctx.restore();
+                }
+
+                if(whiteScreen){
+                    ctx.save();
+                    ctx.globalCompositeOperation = 'lighter';
+                    ctx.fillStyle = color(200, 200, 200, whiteScreen);
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+                    ctx.restore();
+                }
+            }
+
+            _B = -1;
+            B = -1;
+            function update(){
+                if(t >= 496){
+                    beat += 1 / beatThreshold;
+                    B = -1;
+                    beatCounter++;
+                    while(beatCounter >= beatThreshold / 6){
+                        beatCounter -= beatThreshold / 6;
+                        _B++;
+                        B = _B;
+                    }
+                
+                    if(t < 2912 || t > 3733){
+                        if(B >= 0 && (B % 192 == 93 || B % 192 == 186)) {
+                            fullScreenFlash += 100;
+                        }
+                    }
+                }
+
+
+                if(t == 496){
+                    fullScreenFlash += 100;
+                }
+                if(fullScreenFlash > 0.001){
+                    fullScreenFlash *= 0.8;
+                }else {
+                    fullScreenFlash = 0;
+                }
+                mesh.update();
+                if(t >= 1300){
+                    consoleDemo.syncrender(terminal);
+                }
+
+                var telnetStartT = 1005;
+                var telnetEndT = telnetStartT + 250;
+                if(t >= telnetStartT){
+                    var telnetText = 'telnet ninjacon.arkt.is';
+                    var telnetCursor = (t - telnetStartT) /
+                                       (telnetEndT - telnetStartT) *
+                                       telnetText.length | 0;
+                   if(telnetCursor < telnetText.length){
+                       terminal.set(telnetText.charAt(telnetCursor),
+                                    19 + telnetCursor, 3);
+                   }
+                }
+
+                if(t >= 3900 && t <= 4547){
+                    var musicT = (t - 3900) / (4547 - 3900);
+                    music.volume = lerp(1, 0, musicT);
+                    whiteScreen = musicT;
+                }
+
+                if(t == 4547){
+                    render().and.stop;
+                }
+            }
+
+        </script>
+        <script>
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-25881803-1']);
+        _gaq.push(['_setDomainName', '.arkt.is']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        </script>
+    </body>
+</html>
