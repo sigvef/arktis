@@ -1,5 +1,5 @@
 function ConsoleDemo(){
-    this.scrollerText = 'Ninjadev invites you to come to the warmest Ninjacon yet! Kick off the summer with a beautiful weekend in Mörsil, Sweden, the 6th to the 8th of June! There will be good food, fun activities, talks, workshops, and probably a code golfing competition!                                                                                 ';
+    this.scrollerText = 'Ninjadev invites you to come to the warmest Ninjacon yet! Kick off the summer with a beautiful weekend in Mörsil, Sweden, the 6th to the 8th of June! There will be good food, fun activities, talks, workshops, and probably some code golfing! Register for Ninjacon by mail at ninjacon@arkt.is !                                                                                 ';
     this.scrollerX = 0;
 
     this.firstRender = true;
