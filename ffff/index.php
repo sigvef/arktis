@@ -54,6 +54,8 @@ Følgende forkortelsesliste foreligger for foreningens fagmedlemmer:
 <dd>/ˈswag/</dd>
 <dt>.DMG<br />(Apple Disk Image File)</dt>
 <dd>/ˈdæmɪdʒ/</dd>
+<dt>DigO<br />(Digital Ocean)</dt>
+<dd>/dɪɡo/</dd>
 </dl>
 
 </div>
