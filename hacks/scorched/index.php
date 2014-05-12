@@ -3,6 +3,7 @@
 <script>W = 580; H = 580;</script>
     <head><title>Action Scorched :: Arktis by Sigve Sebastian Farstad</title>
 <meta charset="UTF-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css.css" type="text/css" />
 <script src="terrain.js"></script>
 <script src="player.js"></script>

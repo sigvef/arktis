@@ -85,6 +85,7 @@ $links = array(array(
 <title>Arktis by Sigve Sebastian Farstad</title>
 <link rel="stylesheet" href="css.css">
 <meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1">
 <? include('stats.inc');?>
 </head>
 <body>

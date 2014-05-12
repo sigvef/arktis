@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="music.css">
 <script src="Player.js"></script>
 <meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1">
 <? include('../stats.inc');?>
 </head>
 <body>

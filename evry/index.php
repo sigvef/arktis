@@ -4,6 +4,7 @@
 <title>E-V-R-Y :: Arktis by Sigve Sebastian Farstad</title>
 <link rel="stylesheet" href="/css.css">
 <meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1">
 <? require('../stats.inc');?>
 <style>
 em{float:right;}
