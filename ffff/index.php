@@ -30,6 +30,10 @@ Følgende forkortelsesliste foreligger for foreningens fagmedlemmer:
 <dd>/'brīb/</dd>
 <dt>C++<br /></dt>
 <dd>/'sep/</dd>
+<dt>.DMG<br />(Apple Disk Image File)</dt>
+<dd>/ˈdæmɪdʒ/</dd>
+<dt>DO<br />(Digital Ocean)</dt>
+<dd>/ˈdō-sh/</dd>
 <dt>FFFF<br />(Foreningen for Fonetiske Forkortelser)</dt>
 <dd>/ˈfē ˈfä ˈfu ˈfüm/</dd>
 <dt>IRC<br />(Internet Relay Chat)</dt>
@@ -52,10 +56,6 @@ Følgende forkortelsesliste foreligger for foreningens fagmedlemmer:
 <dd>/ˈskwēl/</dd>
 <dt>.SVG<br />(Scalable Vector Graphics)</dt>
 <dd>/ˈswag/</dd>
-<dt>.DMG<br />(Apple Disk Image File)</dt>
-<dd>/ˈdæmɪdʒ/</dd>
-<dt>DO<br />(Digital Ocean)</dt>
-<dd>/ˈdō-sh/</dd>
 </dl>
 
 </div>
