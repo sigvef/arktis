@@ -5,6 +5,11 @@
 
 $links = array(array(
 
+),array( "title" => "Feat.fm"
+ ,  "img" => "images/feat.jpg"
+ ,  "link" => "https://feat.fm/"
+ ,  "description" => "Feat.fm gives you live, social and interactive concerts from any artist, anywhere, anytime. A place for fans to follow, support and interact with their favorite musicians, discover new favorites and connect with other fans across the globe."
+
 ),array( "title" => "\"Old Computers Never Die!\""
  ,  "img" => "images/old-computers-never-die.jpg"
  ,  "link" => "old-computers-never-die"
