@@ -32,6 +32,8 @@ Følgende forkortelsesliste foreligger for foreningens fagmedlemmer:
 <dd>/'sep/</dd>
 <dt>FFFF<br />(Foreningen for Fonetiske Forkortelser)</dt>
 <dd>/ˈfē ˈfä ˈfu ˈfüm/</dd>
+<dt>FLP<br />(FL Studio Project)</dt>
+<dd>/flip/</dd>
 <dt>IRC<br />(Internet Relay Chat)</dt>
 <dd>/iˋrɑ:k/</dd>
 <dt>.js<br />(JavaScript extension)</dt>
