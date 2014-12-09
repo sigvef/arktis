@@ -22,3 +22,6 @@
 [submodule "old-computers-never-die"]
 	path = old-computers-never-die
 	url = git://github.com/sigvef/old-school-demo
+[submodule "demolicious"]
+	path = demolicious
+	url = git@github.com:sigvef/demolicious-transpiler.git
