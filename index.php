@@ -5,6 +5,11 @@
 
 $links = array(array(
 
+),array( "title" => "pdftotext.org"
+ ,  "img" => "images/pdftotext.png"
+ ,  "link" => "http://pdftotext.org/"
+ ,  "description" => "<a href=http://pdftotext.org>pdftotext.org</a> claims to be the best online service for easily extracting text from your PDF files. It leverages the newest HTML5 technology to forgo the usual backend requirements. Since all computation is done client-side, it can be hosted statically on GitHub Pages, which indeed it is."
+
 ),array( "title" => "Feat.fm"
  ,  "img" => "images/feat.jpg"
  ,  "link" => "https://feat.fm/"
