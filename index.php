@@ -15,6 +15,11 @@ $links = array(array(
  ,  "link" => "https://feat.fm/"
  ,  "description" => "Feat.fm gives you live, social and interactive concerts from any artist, anywhere, anytime. A place for fans to follow, support and interact with their favorite musicians, discover new favorites and connect with other fans across the globe."
 
+),array( "title" => "Inakuwa Oasis"
+ ,  "img" => "images/inakuwa-oasis.png"
+ ,  "link" => "inakuwa-oasis"
+ ,  "description" => "A THREE.js WebGL demo made for Solskogen 2014. The demo won 1<sup>st</sup> place in the newschool demo compo. Inakuwa Oasis is the inagural demo  of Ninjadev's new demotool <a href=https://github.com/ninjadev/nin>nin</a>. You can <a href=http://pouet.net/prod.php?which=63732>read more about Inakuwa Oasis on Pouët</a>."
+
 ),array( "title" => "\"Old Computers Never Die!\""
  ,  "img" => "images/old-computers-never-die.jpg"
  ,  "link" => "old-computers-never-die"
