@@ -25,3 +25,6 @@
 [submodule "demolicious"]
 	path = demolicious
 	url = git@github.com:sigvef/demolicious-transpiler.git
+[submodule "barricelli"]
+	path = barricelli
+	url = git@github.com:dmpro-ytelse/barricel.li.git
