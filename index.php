@@ -8,7 +8,7 @@ $links = array(array(
 ),array( "title" => "Everything is Fashion"
  ,  "img" => "images/everything-is-fashion.png"
  ,  "link" => "everything-is-fashion"
- ,  "description" => "A THREE.js WebGL demo made for Solskogen 2014. The won 2<sup>nd</sup> place in the newschool demo compo. You can <a href=http://www.pouet.net/prod.php?which=65978>read more about Everything is Fashion on Pouët</a>."
+ ,  "description" => "A THREE.js WebGL demo made for Solskogen 2015. The won 2<sup>nd</sup> place in the newschool demo compo. You can <a href=http://www.pouet.net/prod.php?which=65978>read more about Everything is Fashion on Pouët</a>."
 
 
 ),array( "title" => "pdftotext.org"
