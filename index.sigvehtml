@@ -1,0 +1,121 @@
+Arktis :: Sigve Sebastian Farstad
+
+#=====================================================================#
+| - Hello people. Here is a list of things I've been working on       | 
+| recently. If you want to contact me, I can be reached at            |
+| sigvefarstad@gmail.com.                                             |
+#=====================================================================#
+
+#=====================# #=====================# #=====================#
+|     Everything      | |       Feat.fm       | |      Heatseeker     |
+|     is Fashion      | |                     | |                     |
++---------------------+ +---------------------+ +---------------------+
+|/everything-is-fash- | | https://feat.fm     | | /heatseeker is a    |
+| ion is a THREE.js   | | brings you live,    | | THREE.js WebGL demo |
+| WebGL demo made for | | interactive         | | made for AbelLAN    |
+| Solskogen 2015. The | | concerts with       | | Autumn 2014 demo    |
+| demo won 2nd place  | | up-and-coming       | | compo, in which it  |
+| in the newschool    | | artists from all    | | won 1st place.      |
+| demo compo.         | | over the world!     | | Heatseeker was made |
+#=====================# #=====================# | using the eminent   |
+                                                | Ninjadev demotool   |
+                                                | nin.                |
+                                                #=====================#
+
+#===============# #===============# #===============# #===============#
+| Inakuwa Oasis | |"Old Computers | | pdftotext.org | |  Barricelli   |
+|               | |   Never Die!" | |               | |               |    
++---------------+ +---------------+ +---------------+ +---------------+
+|/inakuwa-oasis | |/old-computers-| |http://pdfto-  | |/barricelli is |
+|is a THREE.js  | |-never-die is  | |text.org claims| |a specialized  |
+|WebGL demo made| |a 3D web-demo  | |to be the best | |genetic        |
+|for Solskogen  | |written for the| |online service | |algorithm      |
+|2014. The demo | |first demo     | |for easily     | |computer       |
+|won 1st place  | |competition of | |extracting text| |designed and   |
+|in the         | |AbelLAN in     | |from your PDF  | |built by 9     |
+|newschool demo | |Trondheim. The | |files. It      | |other students |
+|compo. Inakuwa | |theme of the   | |leverages the  | |and myself at  |
+|Oasis is the   | |competition was| |newest HTML5   | |the Norwegian  |
+|inagural demo  | |"old school".  | |technology to  | |University of  |
+|of Ninjadev's  | |The demo won   | |forego server- | |Science and    |
+|new demotool   | |1st place in   | |-side work. Si-| |Technology. It |
+|nin.           | |the            | |nce all compu- | |is a computer  |
+#===============# |competition.   | |tation is done | |designed to    |
+                  #===============# |client-side, it| |quickly find   |
+                                    |can be hosted  | |good           |
+                                    |statically on  | |approximations |
+                                    |GitHub Pages,  | |to hard        |
+                                    |which it indeed| |problems using |
+                                    |is.            | |a custom-made  |
+                                    #===============# |hardware-      |
+                                                      |-accelerated   |
+                                                      |generic genetic|
+                                                      |algorithm      |
+                                                      |solver.        |
+                                                      #===============#
+
+#===============# #===============# #===============# #===============#
+| Cute Animals  | |  Wikipendium  | | TUNL-MNTN-WTER| |   HONEYCOMB   |
+|      Inc.     | |               | |               | |               |    
++---------------+ +---------------+ +---------------+ +---------------+
+|/cute-animals- | |https://wikipe-| |/tunl-mntn-wter| |/honeycomb is  |
+|-inc is an add-| |ndium.no is the| | is a THREE.js | |the first      |
+|ictive incre-  | |compendium that| |WebGL demo made| |THREE.js WebGL |
+|mental game    | |anyone can     | |for Solskogen  | |demo I've been |
+|written during | |edit. Wikipen- | |2013. It ended | |a part of, made|
+|a 48-hour long | |dium's goal is | |up on 5th place| |for Solskogen  |
+|game-jam called| |to provide     | |in the PC demo | |2012. It won   |
+|Bacon Game Jam | |freely avail-  | |compo.         | |1st place in   |
+|06. The theme  | |able compen-   | #===============# |the web compo. |
+|of the jam was | |diums for every|                   |The demo feat- |
+|"Rainbow". The | |course. At the |                   |ures what was  |
+|aim of the game| |moment, most of|                   |probably the   |
+|is to protect a| |the compendiums|                   |world's first  |
+|pot of gold    | |on Wikipendium |                   |timing-correct |
+|from evil mon- | |are for courses|                   |pure javascript|
+|sters using    | |offered at     |                   |midi-playing   |
+|rainbow-powered| |NTNU.          |                   |synthesizer    |
+|lasers. The    | #===============#                   |when it was re-|
+|game won 3rd   |                                     |leased.        |
+|place in the   |                                     #===============#
+|jam.           |                                     
+#===============#                                     
+                                                      
+
+#===============# #===============# #===============# #===============#
+|    Firefly    | |   Windwill    | | Event Handler | |   Sigvehtml   |
+|               | |               | |               | |               |    
++---------------+ +---------------+ +---------------+ +---------------+
+|/firefly is a  | |/windwill is a | |/eventhandler  | |https://github-|
+|game written   | |game written   | |is a game writ-| |.com/sigvef/si-|
+|during a 48-   | |during a 48-   | |ten during a   | |gvehtml is an  |
+|-hour long game| |-hour long game| |48-hour long   | |ASCII-art-orie-|
+|jam called Bac-| |jam called Bac-| |game jam called| |nted document  |
+|on Game Jam 05.| |on Game Jam 03.| |Bacon Game Jam | |description la-|
+|The aim was to | |The theme of   | |02. The aim was| |nguage that co-|
+|make a game    | |the jam was:   | |to make a game | |mpiles to HTML.|
+|from scratch   | |"Wind-powered".| |from scratch   | |It values read-|
+|built around   | |Windwill is    | |built around   | |ability of the |
+|the theme of   | |quite playable | |the theme of   | |source code    |
+|the jam:       | |on iPad, so you| |the jam: "Reve-| |above all else,|
+|"Lights Out".  | |should try that| |rse Perspect-  | |leveraging the |
+#===============# |if you have    | |ive". Event    | |visual intuiti-|
+                  |one.           | |Handler was    | |veness in hu-  |
+                  #===============# |written in     | |mans to quickly|
+                                    |about 24 hours.| |convey the str-|
+                                    #===============# |ucture and con-|
+                                                      |tent of a docu-|
+                                                      |ment.          |
+                                                      |This webpage is|
+                                                      |actually writ- |
+                                                      |ten in         |
+                                                      |Sigvehtml!     |
+                                                      #===============#
+
+#=================================# #=================================#
+|              Music              | |              Hacks              |
++---------------------------------+ +---------------------------------+
+| /music that I have made.        | | /hacks is where I aggregate some|
+#=================================# | of my random hacks. Some are    |
+                                    | interesting, some are not.      |
+                                    #=================================#
