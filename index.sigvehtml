@@ -21,101 +21,133 @@ Arktis :: Sigve Sebastian Farstad
                                                 | Ninjadev demotool   |
                                                 | nin.                |
                                                 #=====================#
+                                                
+#=====================# #=====================# #=====================#
+|     Elma Python     | |       GitHub        | |      Nin            |
+|     Library         | | Notification Snoozer| |                     |
++---------------------+ +---------------------+ +---------------------+
+|https://github.com/s-| |https://github.com/s-| |https://github.com/n-|
+|igvef/elma is an ope-| |igvef/github-notific-| |injadev/nin is ninja-|
+|n-source python modu-| |ation-snoozer is a G-| |tool. That is, nin is|
+|le that enables high-| |oogle Chrome extensi-| |Ninjadev's internal  |
+|-level programmatic  | |on that allows users | |demotool. It is an o-|
+|parsing and manipula-| |to selectively mute  | |pen-source tool for  |
+|tion of binary level | |notifications based  | |easing development of|
+|and replay files for | |on the originating   | |browser-based WebGL  |
+|the 2000 game Elasto-| |repositories. This is| |demoscene production-|
+|mania.               | |a useful tool to help| |s. The tool itself a-|
+#=====================# |maintain a clearly d-| |lso runs in the brow-|
+                        |efined boundary betw-| |ser, and uses well-  |
+                        |een work and spare t-| |-known metaphors from|
+                        |ime for people who u-| |video editing softwa-|
+                        |se the same GitHub a-| |re to manipulate a r-|
+                        |ccount for work and  | |eal-time visual codi-|
+                        |for personal activit-| |ng environment.      |
+                        |y.                   | #=====================#
+                        #=====================#
 
-#===============# #===============# #===============# #===============#
-| Inakuwa Oasis | |"Old Computers | | pdftotext.org | |  Barricelli   |
-|               | |   Never Die!" | |               | |               |    
-+---------------+ +---------------+ +---------------+ +---------------+
-|/inakuwa-oasis | |/old-computers-| |http://pdfto-  | |/barricelli is |
-|is a THREE.js  | |-never-die is  | |text.org claims| |a specialized  |
-|WebGL demo made| |a 3D web-demo  | |to be the best | |genetic        |
-|for Solskogen  | |written for the| |online service | |algorithm      |
-|2014. The demo | |first demo     | |for easily     | |computer       |
-|won 1st place  | |competition of | |extracting text| |designed and   |
-|in the         | |AbelLAN in     | |from your PDF  | |built by 9     |
-|newschool demo | |Trondheim. The | |files. It      | |other students |
-|compo. Inakuwa | |theme of the   | |leverages the  | |and myself at  |
-|Oasis is the   | |competition was| |newest HTML5   | |the Norwegian  |
-|inagural demo  | |"old school".  | |technology to  | |University of  |
-|of Ninjadev's  | |The demo won   | |forego server- | |Science and    |
-|new demotool   | |1st place in   | |-side work. Si-| |Technology. It |
-|nin.           | |the            | |nce all compu- | |is a computer  |
-#===============# |competition.   | |tation is done | |designed to    |
-                  #===============# |client-side, it| |quickly find   |
-                                    |can be hosted  | |good           |
-                                    |statically on  | |approximations |
-                                    |GitHub Pages,  | |to hard        |
-                                    |which it indeed| |problems using |
-                                    |is.            | |a custom-made  |
-                                    #===============# |hardware-      |
-                                                      |-accelerated   |
-                                                      |generic genetic|
-                                                      |algorithm      |
-                                                      |solver.        |
-                                                      #===============#
+#=====================# #=====================# #=====================#
+| Evolving Cellular   | | Inakuwa Oasis       | | "Old Computers      |
+| Automata in-materio | |                     | |  Never Die!"        |
++---------------------+ +---------------------+ +---------------------+
+|http://arkt.is/evolv-| |/inakuwa-oasis is a  | |/old-computers-never-|
+|ing-cellular-automat-| |THREE.js WebGL demo  | |-die is a 3D web-demo|
+|a-in-materio.pdf is  | |made for Solskogen 2-| |written for the first|
+|my pre-thesis semest-| |014. The demo won 1st| |demo competition of  |
+|er paper written at  | |place in the newscho-| |AbelLAN in Trondheim.|
+|the Norwegian Univer-| |ol demo compo. Inaku-| |The theme of the com-|
+|sity of Science and  | |wa Oasis is the inag-| |petition was "old sc-|
+|Technology. The paper| |ural demo of Ninjade-| |hool". The demo won  |
+|explores the possibi-| |v's new demotool nin.| |1st place in the com-|
+|lity of implementing | #=====================# |petition.            |
+|Cellular Automata as |                         #=====================#
+|a computational abst-|
+|raction on top of a  |
+|single-walled carbon |
+|nanotube and polymer |
+|composite material.  |
+|The project serves as|
+|a set-up for my Mast-|
+|er's thesis.         |
+#=====================#
+#
+#=====================# #=====================# #=====================#
+| pdftotext.org       | | Barricelli          | | Cute Animals Inc.   |
+|                     | |                     | |                     |
++---------------------+ +---------------------+ +---------------------+
+|http://pdftotext.org | |/barricelli is a spe-| |/cute-animals-inc is |
+|claims to be the best| |cialized genetic alg-| |an addictive increme-|
+|online service for e-| |orithm computer desi-| |ntal game written du-|
+|asily extracting text| |gned and built by 9  | |ring a 48-hour-long  |
+|from your PDF files. | |other students and m-| |game-jam called Baco-|
+|It leverages the new-| |yself at the Norwegi-| |n Game Jam 06. The t-|
+|est HTML5 technologi-| |an University of Sci-| |heme of the the jam  |
+|es to forego server- | |ence and Technology. | |was "Rainbow". The a-|
+|-side work. Since all| |It is a computer des-| |im of the game is to |
+|computation is done  | |igned to quickly find| |protect a pot of gold|
+|client-side, it can  | |good approximation s-| |from evil monsters u-|
+|be hosted statically | |olutions to hard pro-| |ing rainbow-powered  |
+|on GitHub Pages, whi-| |blems using a custom-| |lasers. The game won |
+|ch indeed it is.     | |made hardware-accele-| |3rd place in the jam.|
+#=====================# |rated genetic algori-| #=====================#
+                        |thm solver.          |
+                        #=====================#
 
-#===============# #===============# #===============# #===============#
-| Cute Animals  | |  Wikipendium  | | TUNL-MNTN-WTER| |   HONEYCOMB   |
-|      Inc.     | |               | |               | |               |    
-+---------------+ +---------------+ +---------------+ +---------------+
-|/cute-animals- | |https://wikipe-| |/tunl-mntn-wter| |/honeycomb is  |
-|-inc is an add-| |ndium.no is the| | is a THREE.js | |the first      |
-|ictive incre-  | |compendium that| |WebGL demo made| |THREE.js WebGL |
-|mental game    | |anyone can     | |for Solskogen  | |demo I've been |
-|written during | |edit. Wikipen- | |2013. It ended | |a part of, made|
-|a 48-hour long | |dium's goal is | |up on 5th place| |for Solskogen  |
-|game-jam called| |to provide     | |in the PC demo | |2012. It won   |
-|Bacon Game Jam | |freely avail-  | |compo.         | |1st place in   |
-|06. The theme  | |able compen-   | #===============# |the web compo. |
-|of the jam was | |diums for every|                   |The demo feat- |
-|"Rainbow". The | |course. At the |                   |ures what was  |
-|aim of the game| |moment, most of|                   |probably the   |
-|is to protect a| |the compendiums|                   |world's first  |
-|pot of gold    | |on Wikipendium |                   |timing-correct |
-|from evil mon- | |are for courses|                   |pure javascript|
-|sters using    | |offered at     |                   |midi-playing   |
-|rainbow-powered| |NTNU.          |                   |synthesizer    |
-|lasers. The    | #===============#                   |when it was re-|
-|game won 3rd   |                                     |leased.        |
-|place in the   |                                     #===============#
-|jam.           |                                     
-#===============#                                     
+#=====================# #=====================# #=====================#
+| Wikipendium         | | TUNL-MNTN-WTER      | | HONEYCOMB           |
+|                     | |                     | |                     |
++---------------------+ +---------------------+ +---------------------+
+|https://wikipendium.-| |/tunl-mntn-wter is a | |/honeycomb is the fi-|
+|no is the compendium | |THREE.js WebGL demo  | |rst THREE.js WebGL d-|
+|that anyone can edit.| |made for Solskogen 2-| |emo I've been a part |
+|Wikipendium's goal is| |013. It ended up on  | |of, made for Solskog-|
+|to provide freely av-| |5th place in the PC  | |en 2012. It won 1st  |
+|ailable compendiums  | |demo compo.          | |place in the web com-|
+|for every course. At | #=====================# |po. The demo feature-|
+|the moment, most of  |                         |s what was probably  |
+|the compendiums on W-|                         |the world's first ti-|
+|ikipendium are for c-|                         |ming-correct pure ja-|
+|ourses offered at NT-|                         |vascript midi-playing|
+|NU.                  |                         |synthesizer when it  |
+#=====================#                         |was released.        |
+                                                #=====================#
                                                       
+#=====================# #=====================# #=====================#
+| Firefly             | | Windwill            | | Event Handler       |
+|                     | |                     | |                     |
++---------------------+ +---------------------+ +---------------------+
+|/firefly is a game w-| |/windwill is a game  | |/eventhandler is a g-|
+|ritten during a 48-h-| |written during a 48- | |ame written during a |
+|our-long game jame c-| |-hour-long game jam  | |48-hour-long game jam|
+|alled Bacon Game Jam | |called Bacon Game Jam| |called Bacon Game Jam|
+|05. The aim was to m-| |03. The theme of the | |02. The aim was to m-|
+|ake a game from scra-| |jam was: "Wind-power-| |ake a game from scra-|
+|tch built around the | |ed". Windwill is qui-| |tch built around the |
+|theme of the jam: "L-| |te playable on iPad, | |theme of the jam: "R-|
+|ights Out".          | |so you should try th-| |everse Perspective". |
+#=====================# |at if you have one.  | |Event Handler was wr-|
+                        #=====================# |itten in about 24 ho-|
+                                                |rs.                  |
+                                                #=====================#
 
-#===============# #===============# #===============# #===============#
-|    Firefly    | |   Windwill    | | Event Handler | |   Sigvehtml   |
-|               | |               | |               | |               |    
-+---------------+ +---------------+ +---------------+ +---------------+
-|/firefly is a  | |/windwill is a | |/eventhandler  | |https://github-|
-|game written   | |game written   | |is a game writ-| |.com/sigvef/si-|
-|during a 48-   | |during a 48-   | |ten during a   | |gvehtml is an  |
-|-hour long game| |-hour long game| |48-hour long   | |ASCII-art-orie-|
-|jam called Bac-| |jam called Bac-| |game jam called| |nted document  |
-|on Game Jam 05.| |on Game Jam 03.| |Bacon Game Jam | |description la-|
-|The aim was to | |The theme of   | |02. The aim was| |nguage that co-|
-|make a game    | |the jam was:   | |to make a game | |mpiles to HTML.|
-|from scratch   | |"Wind-powered".| |from scratch   | |It values read-|
-|built around   | |Windwill is    | |built around   | |ability of the |
-|the theme of   | |quite playable | |the theme of   | |source code    |
-|the jam:       | |on iPad, so you| |the jam: "Reve-| |above all else,|
-|"Lights Out".  | |should try that| |rse Perspect-  | |leveraging the |
-#===============# |if you have    | |ive". Event    | |visual intuiti-|
-                  |one.           | |Handler was    | |veness in hu-  |
-                  #===============# |written in     | |mans to quickly|
-                                    |about 24 hours.| |convey the str-|
-                                    #===============# |ucture and con-|
-                                                      |tent of a docu-|
-                                                      |ment.          |
-                                                      |This webpage is|
-                                                      |actually writ- |
-                                                      |ten in         |
-                                                      |Sigvehtml!     |
-                                                      #===============#
-
-#=================================# #=================================#
-|              Music              | |              Hacks              |
-+---------------------------------+ +---------------------------------+
-| /music that I have made.        | | /hacks is where I aggregate some|
-#=================================# | of my random hacks. Some are    |
-                                    | interesting, some are not.      |
-                                    #=================================#
+#=====================# #=====================# #=====================#
+| Sigvehtml           | | Music               | | Hacks               |
+|                     | |                     | |                     |
++---------------------+ +---------------------+ +---------------------+
+|https://github.com/s-| |https://soundcloud.c-| |/hacks is where I ag-|
+|igvef/sigvehtml is an| |om/sigveseb that I h-| |gregate som of my ra-|
+|ASCII-art-oriented d-| |ve made.             | |ndom hacks. Some are |
+|ocument description  | #=====================# |interesting, some are|
+|language that compil-|                         |not, but most of them|
+|es to HTML. It values|                         |are quite old.       |
+|readability of the s-|                         #=====================#
+|ource code above all |
+|else, leveraging the |
+|visual sense of intu-|
+|ition in humans to q-|
+|uickly convey the st-|
+|ructure and content  |
+|of a document. This  |
+|webpage is actually  |
+|written in Sigvehtml!|
+#=====================#
