@@ -72,25 +72,25 @@ Arktis :: Sigve Sebastian Farstad
 #=====================#
 #
 #=====================# #=====================# #=====================#
-| pdftotext.org       | | Barricelli          | | Cute Animals Inc.   |
+| pdftotext.github.io | | Barricelli          | | Cute Animals Inc.   |
 |                     | |                     | |                     |
 +---------------------+ +---------------------+ +---------------------+
-|http://pdftotext.org | |/barricelli is a spe-| |/cute-animals-inc is |
-|claims to be the best| |cialized genetic alg-| |an addictive increme-|
-|online service for e-| |orithm computer desi-| |ntal game written du-|
-|asily extracting text| |gned and built by 9  | |ring a 48-hour-long  |
-|from your PDF files. | |other students and m-| |game-jam called Baco-|
-|It leverages the new-| |yself at the Norwegi-| |n Game Jam 06. The t-|
-|est HTML5 technologi-| |an University of Sci-| |heme of the the jam  |
-|es to forego server- | |ence and Technology. | |was "Rainbow". The a-|
-|-side work. Since all| |It is a computer des-| |im of the game is to |
-|computation is done  | |igned to quickly find| |protect a pot of gold|
-|client-side, it can  | |good approximation s-| |from evil monsters u-|
-|be hosted statically | |olutions to hard pro-| |ing rainbow-powered  |
-|on GitHub Pages, whi-| |blems using a custom-| |lasers. The game won |
-|ch indeed it is.     | |made hardware-accele-| |3rd place in the jam.|
-#=====================# |rated genetic algori-| #=====================#
-                        |thm solver.          |
+|http://pdftotext.git-| |/barricelli is a spe-| |/cute-animals-inc is |
+|hub.io claims to be  | |cialized genetic alg-| |an addictive increme-|
+|the best online serv-| |orithm computer desi-| |ntal game written du-|
+|ice for easily extra-| |gned and built by 9  | |ring a 48-hour-long  |
+|cting text from your | |other students and m-| |game-jam called Baco-|
+|PDF files. It levera-| |yself at the Norwegi-| |n Game Jam 06. The t-|
+|ges the newest HTML5 | |an University of Sci-| |heme of the the jam  |
+|technologies to fore-| |ence and Technology. | |was "Rainbow". The a-|
+|go server-side work. | |It is a computer des-| |im of the game is to |
+|Since all computation| |igned to quickly find| |protect a pot of gold|
+|is done client-side, | |good approximation s-| |from evil monsters u-|
+|it can be hosted sta-| |olutions to hard pro-| |ing rainbow-powered  |
+|tically on GitHub Pa-| |blems using a custom-| |lasers. The game won |
+|ges, which indeed it | |made hardware-accele-| |3rd place in the jam.|
+|is.                  | |rated genetic algori-| #=====================#
+#=====================# |thm solver.          |
                         #=====================#
 
 #=====================# #=====================# #=====================#
