@@ -24,6 +24,7 @@ h1 {
 
 p {
   padding: 15px;
+  margin: 0;
 }
 
 .box:hover p {
