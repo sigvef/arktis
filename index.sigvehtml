@@ -66,27 +66,24 @@ Arktis :: Sigve Sebastian Farstad
 
 #=====================# #=====================# #=====================#
 | Evolving Cellular   | | Inakuwa Oasis       | | "Old Computers      |
-| Automata in-materio | |                     | |  Never Die!"        |
+| Automata in-Materio | |                     | |  Never Die!"        |
 +---------------------+ +---------------------+ +---------------------+
 |http://arkt.is/evolv-| |/inakuwa-oasis is a  | |/old-computers-never-|
 |ing-cellular-automat-| |THREE.js WebGL demo  | |-die is a 3D web-demo|
 |a-in-materio.pdf is  | |made for Solskogen 2-| |written for the first|
-|my pre-thesis semest-| |014. The demo won 1st| |demo competition of  |
-|er paper written at  | |place in the newscho-| |AbelLAN in Trondheim.|
-|the Norwegian Univer-| |ol demo compo. Inaku-| |The theme of the com-|
-|sity of Science and  | |wa Oasis is the inag-| |petition was "old sc-|
-|Technology. The paper| |ural demo of Ninjade-| |hool". The demo won  |
-|explores the possibi-| |v's new demotool nin.| |1st place in the com-|
-|lity of implementing | |https://www.youtube.-| |petition. https://ww-|
-|Cellular Automata as | |com/watch?v=VFh7AuDc-| |w.youtube.com/watch?-|
-|a computational abst-| |slQ                  | |v=QrDNaSrY9uc        |
-|raction on top of a  | #=====================# #=====================#
-|single-walled carbon |
-|nanotube and polymer |
-|composite material.  |
-|The project serves as|
-|a set-up for my Mast-|
-|er's thesis.         |
+|my Master's thesis   | |014. The demo won 1st| |demo competition of  |
+|written at the Norwe-| |place in the newscho-| |AbelLAN in Trondheim.|
+|gian Univerity of Sc-| |ol demo compo. Inaku-| |The theme of the com-|
+|ience and Technology.| |wa Oasis is the inag-| |petition was "old sc-|
+|The thesis explores  | |ural demo of Ninjade-| |hool". The demo won  |
+|the possibility of   | |v's new demotool nin.| |1st place in the com-|
+|implementing Cellula-| |https://www.youtube.-| |petition. https://ww-|
+|r Automata as a comp-| |com/watch?v=VFh7AuDc-| |w.youtube.com/watch?-|
+|utational abstraction| |slQ                  | |v=QrDNaSrY9uc        |
+|on top of a single-  | #=====================# #=====================#
+|-walled carbon nano- |
+|tube and polymer com-|
+|posite material.     |
 #=====================#
 #
 #=====================# #=====================# #=====================#
