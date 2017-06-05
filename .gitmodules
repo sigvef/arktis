@@ -28,3 +28,6 @@
 [submodule "barricelli"]
 	path = barricelli
 	url = git@github.com:dmpro-ytelse/barricel.li.git
+[submodule "drop"]
+	path = drop
+	url = https://github.com/sigvef/drop
