@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Verge :: Arktis
+</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/css.css" type="text/css" />
+<style>
+em{float:right;}
+</style>
+</head>
+<body>
+
+<h1>Arktis</h1>
+
+<nav><a href="/">Arktis</a> » <a href="/verge">Verge</a></nav>
+
+<h2>Verge</h2>
+<canvas width=560 height=560 id="verge"></canvas>
+<script>
+
+var canvas = document.getElementById("verge");
+var ctx = canvas.getContext("2d");
+
+
+function julia_set(z_a, z_b, c_a, c_b, max_iterations, threshold){
+    var i;
+    var new_z_a;
+    var new_z_b;
+    var threshold_squared = threshold*threshold;
+
+    for(i=0;i<max_iterations;i++){
+        /* z = z^2 +c */
+        new_z_a = z_a*z_a-z_b*z_b+c_a;
+        new_z_b = z_b*z_a*2+c_b;
+
+        /* if |z| > threshold */
+        if(new_z_a*new_z_a+new_z_b*new_z_b >= threshold_squared){
+            return i;
+        }
+        z_a = new_z_a;
+        z_b = new_z_b;
+    }
+    return 255;
+}
+
+
+
+var time, old_time, dt, t;
+var c_a = 0;
+var c_b = 0.01;
+ctx.fillRect(0,0,560,560);
+var img_data = ctx.getImageData(0,0,560,560);
+var img_data_data = img_data.data;
+var zoom = 2;
+function render(){
+    var x;
+    var y;
+    var color;
+    for(y=0;y<560;y++){
+        for(x=0;x<560;x++){
+            color = julia_set(zoom*x/560-zoom/2,zoom*y/560-zoom/2,c_a, c_b, 25,1000);
+            img_data_data[(y*560 + x)*4]   = color*color;
+            img_data_data[(y*560 + x)*4+1] = color;
+            //img_data_data[(y*560 + x)*4+2] = 0;
+        }
+    }
+    ctx.putImageData(img_data,0,0);
+}
+
+function update(){
+    t++;
+    c_a = Math.cos(t*Math.PI/181);
+    c_b = Math.sin(t*Math.PI/269);
+}
+
+
+function loop(){
+    dt += (time-old_time);
+    old_time = time;
+    time = new Date();
+    dt = dt%1000;
+    while(dt>20){
+        update();
+        dt-=20;
+    }
+    render();
+    setTimeout(loop,0);
+}
+
+function start(){
+    time = new Date();
+    old_time = time;
+    t = 0;
+    dt = 0;
+    setTimeout(loop,0);
+}
+
+
+start();
+</script>
+    <footer>
+    Sigve Sebastian Farstad &copy; 2012
+    </footer>
+</body>
+</html>
