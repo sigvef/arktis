@@ -1,0 +1,398 @@
+/* @pjs transparent=true; */
+
+PFont f;           
+PImage b;
+
+int SCREEN_W;
+int SCREEN_H;
+
+if(location.search.split('?') == "fullhd"){
+SCREEN_W = 1920; //canvas width in pixels
+SCREEN_H = 1080;  //canvas height in pixels
+}
+else if(location.search.split('?') == "sd"){
+SCREEN_W = 640;
+SCREEN_H = 360;
+}
+else{
+SCREEN_W = 1280;
+SCREEN_H = 720;	
+}
+
+int GU = SCREEN_W/128; //grid unit size in pixels
+
+  f = loadFont("Ziggurat-HTF-Black-32.vlw");
+textFont(f,10*GU);  
+
+
+int numpoints=250; //number of points
+int currmin = 0; //tracks index of nearest target
+int oldmin = 0;
+int secondmin = 0; //tracks index of second-nearest targets
+int currentTime = 0;
+int oldTime = 0;
+int numHits=0;
+int numMisses=0;
+int runningTotalTime=0;
+float points = 0;
+float fps = 0;
+float oldfps = 0;
+float oldfps2 = 0;
+float oldfps3 = 0;
+int fatness = GU;
+int shrinkers = 3;
+float oldx = 0;
+float oldy = 0;
+
+
+String HUDmessage = "";
+float HUDtimer = 0;
+
+String[] story = new String[20];
+story[0] = "♂: “I should draw strength from\n\n\n     these bubbles to stay \n\n\n     alive in this harsh environment.”";
+story[1] = "♂: “I'm coming for you, darling!”";
+story[2] = "♀: “Hurry!”";
+story[3] = "♂: “What a strange place this is...”";
+story[4] = "♂: “I feel like I've been here before.”";
+story[5] = "♂: “There is something here,\n\n\n     I can feel it.”";
+story[6] = "♂: “Is it a dream or is it real?”";
+story[7] = "♂: “Don't worry, my love, I'm \n\n\n     on my way to to bring us back\n\n\n     together again.”";
+story[8] = "♀: “I miss you so much.”";
+story[9] = "♂: “Remember the time we went ice skating\n\n\n     on the Great Lake?”";
+story[10] = "♀: “And you fell in the water.”";
+story[11] = "♂: “And you pulled me out again.”";
+story[12] = "♂: “Now it is my turn to 'pull you out'.”";
+story[13] = "♂: “Look I can see our house from here!”";
+story[14] = "♀: “Yes I see it too.”";
+story[15] = "♀: “Come hither.”";
+story[16] = "♂: “It has been a long journey.”";
+story[17] = "♂: “But I know in the end, it will be all worth it.”";
+story[18] = "♂: “I'm coming to see you again now.”";
+float[] storyX = new float[20];
+float[] storyY = new float[20];
+storyX[0] = 2000;
+storyY[0] = 520;
+storyX[1] = 3300;
+storyY[1] = 290;
+storyX[2] = 3600;
+storyY[2] = 440;
+storyX[3] = 7000;
+storyY[3] = 100;
+storyX[4] = 8780;
+storyY[4] = 300;
+storyX[5] = 10480;
+storyY[5] = 500;
+storyX[6] = 13080;
+storyY[6] = 550;
+storyX[7] = 15580;
+storyY[7] = 500;
+storyX[8] = 17280;
+storyY[8] = 200;
+storyX[9] = 19080;
+storyY[9] = 400;
+storyX[10] = 20780;
+storyY[10] = 400;
+storyX[11] = 22080;
+storyY[11] = 400;
+storyX[12] = 24480;
+storyY[12] = 400;
+storyX[13] = 27080;
+storyY[13] = 60;
+storyX[14] = 28080;
+storyY[14] = 210;
+storyX[15] = 29880;
+storyY[15] = 400;
+storyX[16] = 31580;
+storyY[16] = 120;
+storyX[17] = 35880;
+storyY[17] = 300;
+storyX[18] = 43880;
+storyY[18] = 400;
+
+
+float health = 100;
+
+//floats and float arrays to handle position, movement, timing
+float x, y;              //old cursor position
+float cursorX, cursorY;  //cursor position
+float [] pointsX, pointsY;
+float [] diameter;
+float[] containDistances = new float[numpoints];
+float[] intersectDistances = new float[numpoints];
+float[] distances = new float[numpoints];
+float[] animationStage = new float[numpoints];
+boolean[] active = new boolean[numpoints];
+float cursorDiameter;
+float ringDiameter = 0;
+float startTime=0;
+float timeElapsed=0;
+
+float x_offset = 0;
+float scrollspeed = 15*GU;
+
+void resetGame(){
+
+	fatness = 2*GU;
+	x_offset = 0;
+	points = 0;
+collisionsFound=true;
+    while (collisionsFound){
+      initializePoints();
+    }  
+}
+
+
+//booleans to track program mode and bubble behavior
+boolean morphed; //tracks if the bubble needs to be morphed
+boolean regularCursor; //turns off the bubble cursor entirely
+boolean testMode; // activates the target-timing test
+boolean collisionsFound; //used only in initializing points to prevent overlap
+boolean startGame = false;
+
+boolean[] keys = new boolean[255];
+
+var channel_max = 20;										// number of channels
+	audiochannels = new Array();
+	for (a=0;a<channel_max;a++) {									// prepare the channels
+		audiochannels[a] = new Array();
+		audiochannels[a]['channel'] = new Audio();						// create a new audio object
+		audiochannels[a]['finished'] = -1;							// expected end time for this channel
+	}
+	function playSound(s) {
+		for (a=0;a<audiochannels.length;a++) {
+			thistime = new Date();
+			if (audiochannels[a]['finished'] < thistime.getTime()) {			// is this channel finished?
+				audiochannels[a]['finished'] = thistime.getTime() + document.getElementById(s).duration*1000;
+				audiochannels[a]['channel'].src = document.getElementById(s).src;
+				audiochannels[a]['channel'].load();
+				audiochannels[a]['channel'].play();
+				break;
+			}
+		}
+	}
+
+ 
+
+void mousePressed(){
+ if(!startGame && ready){
+ playSound("music");
+ startGame = true;}
+ 
+
+}
+
+
+void initializePoints(){
+  for (int i =0;i<numpoints;i++){     
+        pointsX[i]= random(SCREEN_W,SCREEN_W*34);
+        pointsY[i]= random(0,SCREEN_H);
+        diameter[i]= random(GU,10*GU);
+		animationStage[i] = 0;
+		active[i] = true;
+      }
+  collisionsFound=false;
+  /*for (int i=0;i<numpoints;i++){
+     for (int j=0; j<i; j++)
+     {
+       float separation = dist(pointsX[i],pointsY[i],pointsX[j],pointsY[j]);
+         if  ((separation < (diameter[i]/2)+20) || (separation<(diameter[j]/2)+20)){
+           collisionsFound=true;
+     }
+  }
+
+  }*/
+}
+
+void setup() 
+{
+
+  size(SCREEN_W, SCREEN_H); 
+  smooth();
+  noStroke();
+  pointsX = new float[numpoints];
+  pointsY = new float[numpoints];
+  diameter = new float[numpoints];
+  
+  //initialize some random points
+  
+	resetGame();
+      
+      
+}
+
+void draw() 
+{ 
+
+ 
+  oldTime = currentTime;
+  currentTime = millis();
+  dt = (currentTime - oldTime)/1000;
+  
+  if(currentTime-oldTime!=0){oldfps3 = oldfps2; oldfps2 = oldfps; oldfps = fps; fps = (oldfps3 + oldfps2 + oldfps +(1000/(currentTime - oldTime)))/4;}
+  if(startGame && x_offset<SCREEN_W*35){
+	  x_offset += scrollspeed*dt;
+  }else if(startGame && x_offset>SCREEN_W*35){x_offset=SCREEN_W*35;}
+  
+  background(0,0,0,0);
+	$('#game').css({'background-position':floor(-x_offset/4)+'px 0'});
+	
+  cursorX = mouseX;  
+  
+   if(dist(x+x_offset,y,pointsX[currmin],pointsY[currmin])<(diameter[currmin]+fatness)/2){
+		x += (((diameter[currmin]+fatness)/2 - dist(x+x_offset,y,pointsX[currmin],pointsY[currmin]))/dist(x+x_offset,y,pointsX[currmin],pointsY[currmin]))*(x+x_offset-pointsX[currmin]);
+		y += (((diameter[currmin]+fatness)/2 - dist(x+x_offset,y,pointsX[currmin],pointsY[currmin]))/dist(x+x_offset,y,pointsX[currmin],pointsY[currmin]))*(y-pointsY[currmin]);
+  }
+  
+  //here we follow the strategy on processing.org's tutorial for tracking mouse movement
+  float dx = cursorX - x; //change in xposition
+  if(abs(dx) > 1) {
+	oldx = x;
+    x += dx*2*dt;  
+  }
+  
+  cursorY = mouseY;
+  float dy = cursorY - y; //change in yposition
+  if(abs(dy) > 1) {
+	oldy = y;
+    y += dy*2*dt;
+  }
+  
+  if(startGame){fatness-=GU*0.00004*x_offset*dt;if(fatness>=25*GU){fatness=25*GU};}
+  
+  morphed=false; //true iff we need a morphed cursor bubble
+  currmin=0; 
+  secondmin=0;
+
+  //compute distances to center, outermost and innermost
+  //sides of all neighbors
+  
+  for (int i=0; i<pointsX.length; i++)
+  {
+    distances[i] = dist(x+x_offset,y,pointsX[i],pointsY[i]); //distance to centers
+    containDistances[i] = distances[i] + diameter[i]; //distance to contain
+    intersectDistances[i] = distances[i]-(diameter[i]/2); //distance to intersect
+    
+    //find the nearest neighbor
+    if ((intersectDistances[i]< intersectDistances[currmin]))
+	{
+    currmin=i;
+    }
+  }
+  
+  
+  
+  if(oldmin != currmin &&startGame){
+	oldmin = currmin;
+	if(active[currmin] == true){
+		animationStage[currmin] = 0;
+		fatness+=GU*x_offset*0.00008;
+		points+=fatness;
+		active[currmin] = false;
+		int r = random(5);
+		if(r<1){playSound("dingA");}
+		else if(r<2){playSound("dingF");}
+		else if(r<3){playSound("dingD");}
+		else if(r<4){playSound("dingG");}
+		else if(r<5){playSound("dingC");}
+	}
+  }
+  
+    cursorDiameter = 2*distances[currmin] - diameter[currmin];
+
+	textFont(f,4*GU);
+	textAlign(LEFT,TOP);
+	int counter = 0;
+   for(int i=story.length;i>-1;i--){
+		if(2*(storyX[i]-x_offset)/SCREEN_W <= 1 && 2*(storyX[i]-x_offset)/SCREEN_W >= 0){
+			if(x_offset>14000){fill(255,255,255,255*(2*(storyX[i]-x_offset)/SCREEN_W));}
+			else {fill(0,0,0,255*(2*(storyX[i]-x_offset)/SCREEN_W));}
+		}
+		else{
+		if(x_offset>14000){fill(255);}else{fill(0)}}
+		if(storyX[i]-x_offset<=SCREEN_W && storyX[i]-x_offset >=0){text(story[i],(storyX[i]-x_offset)*(((storyX[i]-x_offset)*(storyX[i]-x_offset)*(storyX[i]-x_offset)*(storyX[i]-x_offset))/(SCREEN_W*SCREEN_W*SCREEN_W*SCREEN_W)),storyY[i]);
+		counter+=1;
+		}
+		if(counter>3){
+		i=-1;
+		}
+   }
+  fill(200,200,200,20);
+  stroke(153);
+  strokeWeight(GU);
+    if(startGame){ellipse(x, y, cursorDiameter, cursorDiameter);
+	fill(255,200,200);
+			noStroke();
+	ellipse(x, y, fatness, fatness);
+	}
+   
+  //draw targets
+  fill(210,210,210,200);
+  for (int i=0;i<pointsX.length;i++){  
+	
+
+	if(active[i]){fill(210,210,210,200);}
+	else{fill(150,150,150,150);}
+	if (i ==currmin)
+	{
+	  stroke(255,200,200);
+	  strokeWeight(GU/3);
+	  ellipse(pointsX[i]-x_offset,pointsY[i],diameter[i],diameter[i]);
+	  noStroke();
+	}
+	else{
+	  noStroke();
+	  ellipse(pointsX[i]-x_offset,pointsY[i],diameter[i],diameter[i]);
+	}
+	
+	if(animationStage[i]>=0 && animationStage[i] < 1){
+		strokeWeight(4*GU*animationStage[i]);
+		stroke(255,200,200,255-animationStage[i]*255)
+		noFill();
+		ellipse(pointsX[i]-x_offset,pointsY[i],diameter[i]+animationStage[i]*4*GU,diameter[i]+animationStage[i]*4*GU);
+		animationStage[i]+=2*dt;
+		strokeWeight(GU/3);
+		
+	  fill(210,210,210,200);
+	}
+	if(animationStage[i] >= 1){
+		animationStage[i] = -1;
+	}
+
+  }
+
+ 
+ stroke(153);
+ noFill();
+ rect(4*GU,68*GU,120*GU,2*GU);
+ noStroke();
+ fill(153);
+ rect(4.5*GU,68.5*GU,119*GU*(x_offset/(SCREEN_W*35)),1*GU);
+ textFont(f,5*GU);
+ fill(255);
+ textAlign(RIGHT, TOP);
+ text(floor(points), 123.5*GU, 4.5*GU);
+ textAlign(LEFT, TOP);
+ text(floor(fps), 4.5*GU, 4.5*GU);
+ textAlign(CENTER,TOP);
+ //if(!ready){text("loading...",SCREEN_W/2,60*GU);}
+ //if(ready && !startGame){text("done",SCREEN_W/2,60*GU);}
+/* if(HUDtimer>0){
+	HUDtimer-=dt;
+	textAlign(CENTER,CENTER);
+	fill(255,255,255,255*HUDtimer);
+	text(HUDmessage,SCREEN_W/2,SCREEN_H/2);
+ }*/
+
+ if(fatness<=0){
+	//startGame = false;
+	//resetGame();
+ }
+ 
+}
+
+
+
+
+
+
+
