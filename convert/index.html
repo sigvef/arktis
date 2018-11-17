@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Converter for Ninjacon</title>
+        <style>
+            body{font-family:Georgia, serif;}
+            input{font-size:40px; padding:10px;font-family:Georgia, serif;}
+        </style>
+    </head>
+    <body>
+        <div style="text-align:center">
+        <input placeholder="message" type="text" id="asc" /><input type="text" id="dec" placeholder="cipher" />
+    </div>
+        <script>
+
+            _atd = {
+                a:"00",
+                b:"01",
+                c:"02",
+                d:"03",
+                e:"04",
+                f:"05",
+                g:"06",
+                h:"07",
+                i:"08",
+                j:"09",
+                k:"10",
+                l:"11",
+                m:"12",
+                n:"13",
+                o:"14",
+                p:"15",
+                q:"16",
+                r:"17",
+                s:"18",
+                t:"19",
+                u:"20",
+                v:"21",
+                w:"22",
+                x:"23",
+                y:"24",
+                z:"25"
+            }
+
+            var asc = document.getElementById("asc");
+            var dec = document.getElementById("dec");
+            function pad(n){
+                while((""+n).length < 3) n="0"+n;
+                return n;
+            }
+            function depad(n){
+                while(n[0] == "0") n=n.substring(1);
+                return n;
+            }
+            function atd(t){
+                r = "";
+                for( i in t) r+=pad(t.charCodeAt(i));
+                return r;
+            }
+            function dta(t){
+                r = "";
+                t=depad(t);
+                if(t.length%3) t="0"+t;
+                if(t.length%3) t="0"+t;
+                while(t){
+                    r+=String.fromCharCode(Number(depad(t.substring(0,3))));
+                    t = t.substring(3);
+                }
+                    return r;
+            }
+            asc.addEventListener("keyup",function(){
+                dec.value = atd(asc.value);  
+            });
+            dec.addEventListener("keyup",function(){
+            asc.value = dta(dec.value);
+
+        });
+    </script>
+</body>
+</html>
