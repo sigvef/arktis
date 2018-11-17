@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Copter :: Arktis
+</title>
+<meta charset="UTF-8">
+<style>
+em{float:right;}
+*{margin:0;padding:0;}
+</style>
+</head>
+<body>
+
+<canvas id="copter"></canvas>
+<script>
+
+var canvas = document.getElementById("copter");
+var ctx = canvas.getContext("2d");
+
+if(window.innerWidth/window.innerHeight > 16/9){
+    canvas.height = window.innerHeight;
+    canvas.width = canvas.height/9*16;
+}else{
+    canvas.width = window.innerWidth;
+    canvas.height = canvas.width/16*9;
+}
+ctx.fillStyle="black";
+ctx.fillRect(0,0,canvas.width, canvas.height);
+var GU = canvas.width/16;
+
+document.addEventListener("touchstart", start_lift);
+document.addEventListener("touchend", stop_lift);
+
+var time, old_time, dt, t;
+var copter = {x:0, y:0, w:0.4, h: 0.4,dx:1,dy:0};
+var lift = false;
+var level = [];
+level_tracker = 0;
+var COOL = 10;
+
+function build_level(){
+    for(var i=0;i<340;i++){
+        level[i] = 2;
+    }
+}
+build_level();
+var dy=0;
+var ddy=0;
+
+function continue_level(){
+    ddy += Math.sin(Math.random()*2*Math.PI)/100;
+    dy += ddy;
+    level[(level_tracker)%level.length] = level[(level_tracker+level.length-2)%level.length] + dy;
+    level[(level_tracker+1)%level.length] = level[(level_tracker+level.length-1)%level.length];
+    level_tracker = (level_tracker+2)%level.length;
+    console.log(level.length);
+}
+
+function start_lift(e){
+    e.preventDefault();
+    e.stopPropagation();
+    lift = true;
+    return false;
+}
+function stop_lift(e){
+    e.preventDefault();
+    e.stopPropagation();
+    lift = false;
+    return false;
+}
+function render(){
+    ctx.fillStyle="black";
+    ctx.fillRect(0,0,canvas.width, canvas.height);
+    ctx.fillStyle="#00ff00";
+    ctx.save();
+    ctx.translate((-copter.x/COOL*GU)|0,0);
+    for(var i=0;i<level.length;i+=2){
+       ctx.fillRect(i*0.5*GU,0, GU, level[(level_tracker+i)%level.length]*GU);
+       ctx.fillRect(i*0.5*GU,canvas.height-level[(level_tracker+i+1)%level.length]*GU, GU, level[(level_tracker+i+1)%level.length]*GU);
+    }
+    ctx.restore();
+    ctx.fillStyle = "gray";
+    ctx.fillRect(2*GU, copter.y*GU, copter.w*GU, copter.h*GU);
+}
+
+function update(){
+    if(lift){
+        copter.dy -= 0.009;
+    }
+    copter.dy+= 0.003;
+    copter.x += copter.dx;
+    copter.y += copter.dy;
+    t++;
+    while(copter.x > COOL){
+        copter.x -= COOL;
+    console.log(level_tracker);
+        continue_level();
+    }
+}
+
+
+function loop(){
+    dt += (time-old_time);
+    old_time = time;
+    time = new Date();
+    dt = dt%1000;
+    while(dt>20){
+        update();
+        dt-=20;
+    }
+    render();
+    setTimeout(loop,0);
+}
+
+function start(){
+    time = new Date();
+    old_time = time;
+    t = 0;
+    dt = 0;
+    setTimeout(loop,0);
+}
+
+
+start();
+</script>
+</body>
+</html>
