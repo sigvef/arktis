@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head><title>Creation :: Arktis</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css.css" type="text/css" />
+
+    </head>
+
+    <body>
+<h1>Arktis</h1>
+<nav><a href="/">Arktis</a> » <a href="/creation">Creation</a></nav>
+<h2>Creation</h2>
+<p>Creation is better than evolution! :D</p>
+        <canvas style="display:block;margin:50px auto;" id="creation" width="560" height="560">Nettleseren din støtter ikke canvas. Prøv en nyere nettleser.</canvas>
+    <script>
+        var canvas = document.getElementById('creation');
+        var ctx = canvas.getContext('2d');
+        setInterval(function(){
+            ctx.strokeRect(Math.floor(Math.random()*560),Math.floor(Math.random()*560),10,10);
+        },500);
+    </script>
+    <footer>
+    Sigve Sebastian Farstad &copy; 2012
+    </footer>
+    </body>
+</html>
