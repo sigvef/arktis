@@ -114,7 +114,6 @@ code.inline{
     display:block;
     width: 100%;
     height: 100%;
-    border-box: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
 .image h2{
