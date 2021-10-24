@@ -58,6 +58,8 @@ Følgende forkortelsesliste foreligger for foreningens fagmedlemmer:
 <dd>/ˈskwēl/</dd>
 <dt>.SVG<br />(Scalable Vector Graphics)</dt>
 <dd>/ˈswag/</dd>
+<dt>ASPX<br />(An ASP.NET Web Forms page)</dt>
+<dd>/ˈaspaks/</dd>
 </dl>
 
 </div>
