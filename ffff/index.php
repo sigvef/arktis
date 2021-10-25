@@ -60,6 +60,8 @@ Følgende forkortelsesliste foreligger for foreningens fagmedlemmer:
 <dd>/ˈswag/</dd>
 <dt>ASPX<br />(An ASP.NET Web Forms page)</dt>
 <dd>/ˈaspaks/</dd>
+<dt>URL<br />(Uniform Resource Locator)</dt>
+<dd>/ʊˈral/</dd>
 </dl>
 
 </div>
